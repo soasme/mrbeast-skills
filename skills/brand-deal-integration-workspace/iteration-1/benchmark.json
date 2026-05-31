@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "skill_name": "brand-deal-integration",
+    "timestamp": "2026-06-01T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "HydroMax desert survival integration",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends placement at approximately the 6-9 minute mark (back half, after lull begins)",
+        "The segment ties HydroMax naturally to the desert survival context (thematic relevance)",
+        "The segment includes a visual or physical demonstration, not just talking",
+        "The segment is scripted to feel conversational, not like a read script",
+        "Runtime recommendation is under 60 seconds",
+        "Includes a simple CTA (URL or promo code) at the end of the segment"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "BetterSleep traditional ad rewrite",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Removes the 'This video is brought to you by...' opener",
+        "Ties BetterSleep to the video context (if context unknown, creates a relatable scenario)",
+        "Rewrites in conversational tone, not marketing copy",
+        "Includes a suggestion for a visual or physical bit",
+        "Preserves the promo code / CTA at the end",
+        "The rewrite is clearly more entertaining than the original"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Two brand deals in 12-minute obstacle course video",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends placing both brand deals in the back half (after minute 6)",
+        "Does not recommend placing any brand deal in the first 5 minutes",
+        "Suggests integration strategies tied to the obstacle course competition context",
+        "Lists specific common mistakes to avoid",
+        "Notes that 2 brand deals in a 12-minute video is manageable if placed correctly",
+        "Advises separating the two brand deals (not back-to-back)"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "HydroMax desert survival integration",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends placement at approximately the 6-9 minute mark (back half, after lull begins)",
+        "The segment ties HydroMax naturally to the desert survival context (thematic relevance)",
+        "The segment includes a visual or physical demonstration, not just talking",
+        "The segment is scripted to feel conversational, not like a read script",
+        "Runtime recommendation is under 60 seconds",
+        "Includes a simple CTA (URL or promo code) at the end of the segment"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "BetterSleep traditional ad rewrite",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Removes the 'This video is brought to you by...' opener",
+        "Ties BetterSleep to the video context (if context unknown, creates a relatable scenario)",
+        "Rewrites in conversational tone, not marketing copy",
+        "Includes a suggestion for a visual or physical bit",
+        "Preserves the promo code / CTA at the end",
+        "The rewrite is clearly more entertaining than the original"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Two brand deals in 12-minute obstacle course video",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends placing both brand deals in the back half (after minute 6)",
+        "Does not recommend placing any brand deal in the first 5 minutes",
+        "Suggests integration strategies tied to the obstacle course competition context",
+        "Lists specific common mistakes to avoid",
+        "Notes that 2 brand deals in a 12-minute video is manageable if placed correctly",
+        "Advises separating the two brand deals (not back-to-back)"
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 0.5, "stddev": 0},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "delta": {
+      "pass_rate": "+0.5",
+      "time_seconds": "0",
+      "tokens": "0"
+    }
+  },
+  "notes": [
+    "The skill provides a clear, specific placement rule (6-9 minute mark) that the baseline consistently violated — recommending placement as early as minutes 2-3 in eval 3.",
+    "The most discriminating expectation across evals was the 'conversational tone, not marketing copy' check — the baseline defaulted to feature-listing and stat-quoting patterns even when it removed the forbidden opener.",
+    "The baseline got visual demonstration right in eval 1 (via tips section) but failed to integrate visuals into the actual script — the skill-guided response scripted visual direction into the delivery.",
+    "All three baseline runs scored exactly 0.5 (3/6) — the baseline is competent at thematic relevance and CTAs but consistently misses placement precision, runtime targets, and craft-level conversational tone.",
+    "The skill's strongest contribution is the placement framework (back half, 6+ minutes) and the anti-pattern list ('This video is brought to you by' opener, script reading) — these are not intuitive defaults for a general-purpose model.",
+    "Eval 2 (ad rewrite) has one potentially weak assertion: 'clearly more entertaining than the original' is subjective and difficult to fail — even mediocre rewrites satisfy it. Consider replacing with a structural assertion.",
+    "The skill produces noticeably longer, more structured responses (avg ~3000 chars) vs. baseline (avg ~1600 chars) — the extra length reflects genuine content (scripts, placement tables, checklists) rather than padding."
+  ]
+}

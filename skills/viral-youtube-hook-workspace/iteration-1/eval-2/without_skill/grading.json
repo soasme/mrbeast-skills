@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies the slow warmup opening as a retention killer",
+      "passed": true,
+      "evidence": "Section 1 'Generic Greeting' states: 'Hey guys, what's up, welcome back to my channel is a very standard opener that doesn't grab attention. By the time someone has clicked on your video, they don't need to be welcomed — they want to see the content they came for.' Correctly identifies the warmup problem."
+    },
+    {
+      "text": "Flags the subscribe/bell ask in the first 30 seconds as a mistake",
+      "passed": true,
+      "evidence": "Section 2 'The Subscribe Ask Is Too Early' states: 'Asking viewers to subscribe and hit the bell in the first 20 seconds is generally considered poor practice because the viewer hasn't received any value yet.' Correctly identified."
+    },
+    {
+      "text": "Flags the sponsor read appearing before the premise is even established",
+      "passed": true,
+      "evidence": "Section 3 'The Sponsor Placement' states: 'Having a sponsor read (NordVPN) before the main content has even been introduced is risky. Many viewers will skip ahead or click away when they see a sponsorship mention this early.' Correctly identified."
+    },
+    {
+      "text": "Notes that the ball pit concept isn't visually shown until well into the script",
+      "passed": false,
+      "evidence": "Section 4 'Slow Premise Reveal' focuses on the verbal delay: 'The actual concept of the video — surviving in a ball pit for 24 hours — doesn't come until about 25–30 seconds in.' It notes the viewer is 'hearing about it verbally rather than seeing it' as a side note, but the critique's focus is on the timing of the verbal mention, not on the absence of visual confirmation. The expectation asks specifically for noting the ball pit is NOT VISUALLY SHOWN — the baseline misses this distinction, treating it as a verbal/timing issue rather than a visual confirmation failure."
+    },
+    {
+      "text": "Provides specific recommendations for how to rewrite the opening",
+      "passed": true,
+      "evidence": "Suggestions section provides: 'Open directly with the ball pit visual', 'State the premise in the first 5 seconds', 'Move the sponsor to after the first exciting moment', 'Remove the subscribe ask from the opening', 'Cut the filler phrases'. These are specific enough to count as recommendations, though no actual rewrite script is provided."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.80
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Write": 1
+    },
+    "total_tool_calls": 1,
+    "output_chars": 1823,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Recommendations are present but generic — no actual rewrite script",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Suggestions are bullet points ('Open directly with the ball pit visual') not a scripted rewrite with dialogue and visual direction"
+    },
+    {
+      "claim": "Visual confirmation failure is partially noted",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Mentions 'hearing about it verbally rather than seeing it' but frames the primary critique as timing of verbal mention, not thumbnail-promise matching"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "The baseline scores well on eval-2 because the problems in the input script are fairly obvious. The skill adds significant value in the depth and specificity of analysis and the quality of the rewrite, but the eval assertions don't fully capture this."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "tool_calls": {
+    "Read": 2,
+    "Write": 1
+  },
+  "total_tool_calls": 3,
+  "skill_used": true,
+  "skill_path": "skills/viral-youtube-hook/SKILL.md",
+  "output_chars": 3847,
+  "notes": "With-skill run: followed SKILL.md output format (Opening Beat, Hook Sequence, Premise Lock, Transition Signal), applied checklist, avoided common mistakes table"
+}

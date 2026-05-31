@@ -1,0 +1,76 @@
+{
+  "expectations": [
+    {
+      "text": "Produces exactly 5 distinct concepts (not minor variations of the same idea)",
+      "passed": true,
+      "evidence": "Five concepts produced: house replacement stunt, racing competition, art mosaic, survival raft, world record. Reasonably distinct from each other."
+    },
+    {
+      "text": "At least one concept uses a scale angle (world's largest, 10,000 rubber ducks, etc.)",
+      "passed": false,
+      "evidence": "Concept 5 mentions 'World Record For Most Rubber Ducks In A Bathtub' which touches scale, but it is framed as a record attempt rather than a true scale angle (no specific number like '10,000' or 'world's largest' in the title). Concept 3 mentions 'thousands of rubber ducks' only in passing. Neither concept is structured around 'what happens when you have 1,000 of these' as the explicit scale angle framework requires."
+    },
+    {
+      "text": "At least one concept uses a competition or outcome-unknown angle",
+      "passed": false,
+      "evidence": "Concept 2 'We Had The Most Intense Rubber Duck Race Ever' mentions racing but the race is between ducks (not humans) and lacks an outcome-unknown structure. There are no human competitors with genuine stakes. No concept explicitly has an outcome-unknown competition format where viewers don't know who will win."
+    },
+    {
+      "text": "Each concept includes a specific wow factor moment (not generic)",
+      "passed": false,
+      "evidence": "Wow factor moments are generic: 'Opening the front door to reveal a house completely yellow' (Concept 1), 'massive custom-built race track' (Concept 2), 'overhead reveal shot' (Concept 3), 'drone shot overhead' (Concept 4), 'bathtub overflowing' (Concept 5). None of these are 'the moment no other creator can do' — they're visually descriptive but not specifically unique or screenshot-worthy in the SKILL.md sense."
+    },
+    {
+      "text": "Titles use extreme/superlative language and pass the 6-word simplicity test",
+      "passed": false,
+      "evidence": "Titles lack the extreme/superlative language the skill requires: 'We Had The Most Intense Rubber Duck Race Ever' is generic superlative without specificity. 'I Set The World Record For Most Rubber Ducks In A Bathtub' is 14 words and the premise is weak. 'I Made A Portrait Of The Mona Lisa Using Only Rubber Ducks' lacks the extremity or urgency of viral titles. No titles use extreme numbers, stakes, or the survival/record format in a compelling way."
+    },
+    {
+      "text": "CTR scores are differentiated (not all rated 5)",
+      "passed": false,
+      "evidence": "CTR scores are: 3, 3, 4, 4, 3 — technically differentiated, but without meaningful rationale. More importantly, two scores are identical (3, 3 for concepts 1 and 2; 4, 4 for concepts 3 and 4). The differentiation is minimal and lacks the specific reasoning the skill framework provides."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 5,
+    "total": 6,
+    "pass_rate": 0.167
+  },
+  "execution_metrics": {
+    "output_chars": 1847,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Five concepts are distinct",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Concepts use different formats but several overlap in spirit (stunt, record attempt are both 'spectacle without stakes')"
+    },
+    {
+      "claim": "Wow factor moments are meaningful",
+      "type": "quality",
+      "verified": false,
+      "evidence": "Moments are visual descriptions, not 'no other creator can do this' moments as defined in SKILL.md"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The expectation 'at least one concept uses a competition or outcome-unknown angle' could be more precisely defined. The baseline output has a rubber duck 'race' which is technically competition but doesn't have human stakes. The assertion could be tightened to require human competitors with real stakes."
+      }
+    ],
+    "overall": "The expectations effectively discriminate between skill-guided and baseline outputs. The baseline fails 5 of 6 expectations, showing the skill meaningfully improves output quality."
+  }
+}

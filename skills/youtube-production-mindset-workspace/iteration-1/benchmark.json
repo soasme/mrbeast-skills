@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "skill_name": "youtube-production-mindset",
+    "timestamp": "2026-06-01T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "World's Largest Swimming Pool Challenge — critical components",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies the facility as the primary critical component (no facility = no video)",
+        "Identifies the custom floating obstacles as a critical component",
+        "Identifies 20 contestants as a critical component (video likely needs minimum count)",
+        "For each component, recommends daily check-ins or equivalent tracking",
+        "Recommends asking for video updates (not just photos) from contractors building obstacles",
+        "Recommends negotiating a backup day with the facility",
+        "Notes that standard shipping should not be trusted for critical props"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "World's Largest Swimming Pool Challenge — critical components",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4286,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies the facility as the primary critical component (no facility = no video)",
+        "Identifies the custom floating obstacles as a critical component",
+        "Identifies 20 contestants as a critical component (video likely needs minimum count)",
+        "For each component, recommends daily check-ins or equivalent tracking",
+        "Recommends asking for video updates (not just photos) from contractors building obstacles",
+        "Recommends negotiating a backup day with the facility",
+        "Notes that standard shipping should not be trusted for critical props"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Contractor silent for 5 days — dump-and-forget scenario",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        "Clearly states that no contact for 5 days is not acceptable",
+        "Uses or references the 'dump-and-forget' failure pattern",
+        "Recommends establishing daily check-ins starting immediately",
+        "Recommends requesting video updates of progress (not just status messages)",
+        "Recommends setting an internal deadline earlier than the actual shoot date",
+        "Recommends starting a backup option in parallel",
+        "Notes that if the castle is critical to the video, the producer is responsible — not the contractor — if it fails"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Contractor silent for 5 days — dump-and-forget scenario",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4286,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Clearly states that no contact for 5 days is not acceptable",
+        "Uses or references the 'dump-and-forget' failure pattern",
+        "Recommends establishing daily check-ins starting immediately",
+        "Recommends requesting video updates of progress (not just status messages)",
+        "Recommends setting an internal deadline earlier than the actual shoot date",
+        "Recommends starting a backup option in parallel",
+        "Notes that if the castle is critical to the video, the producer is responsible — not the contractor — if it fails"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Shoot day crisis — pyrotechnics failure with 4 hours left",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends immediate escalation (not waiting) to leadership/director",
+        "Recommends exploring creative alternatives to pyrotechnics in parallel",
+        "Mentions the principle of 'can this failure become content?'",
+        "Recommends contacting other FX vendors or specialists immediately (no does not mean no)",
+        "Does not recommend just 'skipping the scene' without exploring all options first",
+        "References the importance of having a backup plan (and asks why there wasn't one)"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Shoot day crisis — pyrotechnics failure with 4 hours left",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends immediate escalation (not waiting) to leadership/director",
+        "Recommends exploring creative alternatives to pyrotechnics in parallel",
+        "Mentions the principle of 'can this failure become content?'",
+        "Recommends contacting other FX vendors or specialists immediately (no does not mean no)",
+        "Does not recommend just 'skipping the scene' without exploring all options first",
+        "References the importance of having a backup plan (and asks why there wasn't one)"
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.452,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.548",
+      "time_seconds": "0",
+      "tokens": "0"
+    }
+  },
+  "notes": [
+    "The skill produces a consistent +54.8 percentage point improvement in pass rate across all three evals.",
+    "All with_skill runs achieved perfect 7/7 or 6/6 scores; without_skill runs averaged roughly 3/7 or 3/6.",
+    "The most discriminating expectations were: daily check-ins (without_skill defaulted to every 2-3 days), 'dump-and-forget' pattern naming, 'failure as content' principle, backup day negotiation (vs. backup venue), standard shipping warning, and explicit producer accountability framing.",
+    "Without the skill, the model produces competent generic production advice that correctly identifies the main components but misses the opinionated, specific mechanics that make the skill valuable.",
+    "Eval 2's 'dump-and-forget' expectation is slightly weakened by checking name usage rather than mechanism — consider tightening.",
+    "Eval 3 lacks an assertion for 'capture the failure on camera immediately' which the with_skill response correctly recommends.",
+    "The skill's value is concentrated in behavioral specifics (daily not biweekly, video not photos, backup day in contract not backup venue, producer owns outcome) rather than broad conceptual coverage."
+  ]
+}

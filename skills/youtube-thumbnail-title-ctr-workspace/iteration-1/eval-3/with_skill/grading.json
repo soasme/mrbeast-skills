@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "Correctly diagnoses the title as generic/low-extremity",
+      "passed": true,
+      "evidence": "Problem 1 explicitly states: 'Helping Homeless People Find Homes is generic and descriptive... There's no scale — how many people? What did it cost? What happened?' and lists exactly what's missing: no number, no dollar amount, no outcome hook, no emotional peak, no stakes."
+    },
+    {
+      "text": "Identifies the thumbnail as showing a generic conversation scene with no hook",
+      "passed": true,
+      "evidence": "Problem 2 states: 'A creator talking to a person on a street corner is the most generic possible image for this content. Every news story, every documentary, every charity video uses this exact shot.' The response lists 5 specific reasons the thumbnail has no visual hook."
+    },
+    {
+      "text": "Rewritten title adds scale, number, or outcome (e.g., 'I Gave 100 Homeless People...', '$1,000,000 to Homeless Families')",
+      "passed": true,
+      "evidence": "Option 1: 'I Got 100 Homeless People Off The Streets' (number + outcome). Option 2: 'I Paid For Housing For Every Homeless Person In [City]' (scale). Option 3: 'I Gave $1,000,000 To Homeless Families' (dollar amount). All three rewritten titles include scale, number, or dollar amount."
+    },
+    {
+      "text": "Rewritten thumbnail concept shows transformation, scale, or emotional peak moment",
+      "passed": true,
+      "evidence": "Three thumbnail concepts are provided: Concept A (scale shot with many people), Concept B (emotional peak — person seeing their new home for the first time, showing 'shock and tears'), Concept C (before/after split screen showing transformation). All three meet the expectation."
+    },
+    {
+      "text": "Explicitly notes that the rewrite must not misrepresent the content (expectations must be met)",
+      "passed": true,
+      "evidence": "The 'Content Contract Caveat' section explicitly states: 'If the creator helped 5 people, the title cannot say 100 Families... The rewrite must be the most extreme *true* version of what happened... Rule: Use the actual numbers and actual outcomes.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 2,
+    "output_chars": 4098,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Multiple rewritten title options are provided (4 options)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "The response includes Options 1–4 with distinct framing: number+outcome, scale+completeness, dollar amount, and emotional/first home."
+    },
+    {
+      "claim": "Misleading titles that get clicks but misrepresent content will hurt the channel algorithmically",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The caveat explains: 'If the viewer clicks expecting 100 people and sees 3, they click away immediately — causing YouTube's algorithm to penalize the video further.' This is an accurate description of how YouTube's watch-time and retention signals interact with CTR."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions. The evals are well-calibrated for this eval. The with_skill response thoroughly satisfies all expectations with genuine substance."
+  }
+}

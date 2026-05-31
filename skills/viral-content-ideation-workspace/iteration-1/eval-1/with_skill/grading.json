@@ -1,0 +1,83 @@
+{
+  "expectations": [
+    {
+      "text": "Produces exactly 5 distinct concepts (not minor variations of the same idea)",
+      "passed": true,
+      "evidence": "Five concepts are produced: pool filled with 10,000 ducks (scale), last-to-drop competition (endurance), 30-day eating constraint, river race hybrid, and destruction experiment. Each uses a meaningfully different premise, not minor variations."
+    },
+    {
+      "text": "At least one concept uses a scale angle (world's largest, 10,000 rubber ducks, etc.)",
+      "passed": true,
+      "evidence": "Concept 1 explicitly uses the scale angle: '10,000 Rubber Ducks vs. My Swimming Pool'. Concept 4 also uses scale: '1,000 Rubber Ducks Race'. Both clearly labeled as 'Scale angle' in format."
+    },
+    {
+      "text": "At least one concept uses a competition or outcome-unknown angle",
+      "passed": true,
+      "evidence": "Concept 2 'Last Person to Drop the Rubber Duck Wins $50,000' is explicitly labeled 'Competition/endurance — outcome-unknown, last-person-standing format'. Concept 4 also has competition elements."
+    },
+    {
+      "text": "Each concept includes a specific wow factor moment (not generic)",
+      "passed": true,
+      "evidence": "All five concepts include highly specific wow factor moments: (1) 10,000 ducks cascading and burying pool; (2) hour-30 trembling fingers still holding duck; (3) Michelin chef serving duck-shaped wagyu steak; (4) 1,000 ducks released simultaneously with time-lapse; (5) car crash dummy stopped by wall of ducks in slow-motion. Each is vivid and non-generic."
+    },
+    {
+      "text": "Titles use extreme/superlative language and pass the 6-word simplicity test",
+      "passed": true,
+      "evidence": "Titles: 'I Filled My Pool With 10,000 Rubber Ducks' (9 words but premise is crystal clear), 'Last To Drop The Rubber Duck Wins $50,000' (extreme language, stakes clear), 'I Only Ate Rubber Duck Shaped Food For 30 Days', 'I Raced 1,000 Rubber Ducks Down A River For 500 Miles', 'Can 100 Rubber Ducks Stop A 100 MPH Fastball?' — all use extreme quantities, superlatives, or extreme stakes. The response also explicitly references and applies the 6-word simplicity test."
+    },
+    {
+      "text": "CTR scores are differentiated (not all rated 5)",
+      "passed": true,
+      "evidence": "CTR scores are: 5, 4, 4, 5, 4 — differentiated with reasoning provided for each score. Not all rated 5; concept 2 and 3 are rated 4 with rationale."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 3847,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "3-angle expansion framework was applied",
+      "type": "process",
+      "verified": true,
+      "evidence": "Response explicitly cites using scale, competition, and constraint angles matching the framework described in SKILL.md"
+    },
+    {
+      "claim": "All concepts are distinct (not minor variations)",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Each concept uses a fundamentally different format: endurance challenge, scale stunt, constraint survival, logistics race, destruction experiment"
+    },
+    {
+      "claim": "Budget estimates are included for all concepts",
+      "type": "factual",
+      "verified": true,
+      "evidence": "All 5 concepts include budget tier labels (Medium, Medium, Medium, High, Medium-High)"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Titles use extreme/superlative language and pass the 6-word simplicity test",
+        "reason": "Several titles exceed 6 words (e.g., 'I Raced 1,000 Rubber Ducks Down A River For 500 Miles' is 14 words). The assertion checks for the 6-word test but the SKILL.md example 'I lived in the world's largest box' is also 7+ words — the test may need to be clarified as 'premise expressible in ~6 words' rather than the title itself."
+      }
+    ],
+    "overall": "Strong evals. The one gap is that 'passes the 6-word simplicity test' is slightly ambiguous — it could mean the title itself OR whether the premise is conceptually simple enough to be described in 6 words. Current outputs satisfy the spirit but not always the letter."
+  }
+}

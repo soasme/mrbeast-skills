@@ -1,0 +1,79 @@
+{
+  "expectations": [
+    {
+      "text": "Removes the 'This video is brought to you by...' opener",
+      "passed": true,
+      "evidence": "Both rewritten options (Option A and Option B) begin with contextual story content, not the forbidden opener. Option A starts with '[Cut to a contestant visibly struggling...]', Option B starts with 'Real quick — I need to talk to you about something important.' Neither uses the banned phrase."
+    },
+    {
+      "text": "Ties BetterSleep to the video context (if context unknown, creates a relatable scenario)",
+      "passed": true,
+      "evidence": "Option A ties directly to a tired contestant in the video. Option B creates a relatable host-context: 'I've been staying up until 3 AM editing videos.' Both approaches provide a contextual hook rather than jumping straight into product pitch."
+    },
+    {
+      "text": "Rewrites in conversational tone, not marketing copy",
+      "passed": true,
+      "evidence": "Option A: 'Over 60 million people use it, which honestly tracks because everyone I know has bad sleep.' Option B: 'I was skeptical. It works.' Both use colloquial, first-person language rather than marketing copy."
+    },
+    {
+      "text": "Includes a suggestion for a visual or physical bit",
+      "passed": true,
+      "evidence": "Option A includes: '[Glances at tired contestant]' and '[Pulls out phone, shows BetterSleep app on screen]'. Visual direction is integrated into the script."
+    },
+    {
+      "text": "Preserves the promo code / CTA at the end",
+      "passed": true,
+      "evidence": "Both options end with 'Use code BEAST for 30% off, link in description.' — original 30% discount and code are preserved."
+    },
+    {
+      "text": "The rewrite is clearly more entertaining than the original",
+      "passed": true,
+      "evidence": "Option A builds a narrative around a tired contestant and sets up a payoff joke ('I'm sending him this after the video'). Option B uses deadpan self-aware humor. Both are clearly more engaging than the original marketing-copy read. The comparison table in the response also explicitly documents the improvements."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2804,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The comparison table accurately documents the improvements",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The table maps each original problem to a specific fix — the mapping is accurate and the fixes are genuinely present in the rewritten scripts."
+    },
+    {
+      "claim": "The placement note at the end is relevant",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The prompt didn't specify a video length or current placement, so flagging the 6-minute rule as context-dependent advice is appropriate and adds value."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The 'clearly more entertaining' assertion is subjective and difficult to fail — almost any rewrite would satisfy it compared to a dry marketing script. Consider adding an assertion that tests a specific craft element, like 'the rewrite uses a narrative setup before introducing the product' or 'the rewrite includes a comedic or emotional payoff.'"
+      }
+    ],
+    "overall": "Strong evals overall. The one weak assertion is the subjective 'clearly more entertaining' check — it's hard to fail even for mediocre rewrites."
+  }
+}

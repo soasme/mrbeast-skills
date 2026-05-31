@@ -1,0 +1,77 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies the 0-2 minute explanation + sponsor as a retention killer",
+      "passed": true,
+      "evidence": "Problem 1 section states: 'Starting with a rule explanation and sponsor read... This is the highest-risk 60 seconds of the entire video. Roughly 30–40% of viewers who clicked will leave in the first minute if they aren't immediately shown what they came for.' and 'The sponsor mention is even worse — it signals \"content hasn't started yet.\"'"
+    },
+    {
+      "text": "Flags that the actual action (challenge) doesn't start until minute 8 — far too late",
+      "passed": true,
+      "evidence": "Problem 4 is explicitly titled 'The Challenge Starts at Minute 8 — Way Too Late' and states: 'The core promise of the video (the challenge) doesn't begin until minute 8 in a 15-minute video. That's more than halfway through.' and 'Most viewers have clicked away before the actual content begins.'"
+    },
+    {
+      "text": "Notes that set-building content is not hook-level content",
+      "passed": true,
+      "evidence": "Problem 2 states: 'Set-building content is B-roll, not story. At minute 2, the viewer doesn't yet have emotional investment in any person or outcome. Watching construction equipment and production crew at work is not compelling in the pre-investment window.'"
+    },
+    {
+      "text": "Recommends moving the challenge start much earlier (minutes 1-3)",
+      "passed": true,
+      "evidence": "Problem 4 fix states: 'The challenge must begin by minute 1–2 at the absolute latest. The hook-transition-build framework requires execution to be visible within the first 60 seconds.' Recommended restructure table confirms challenge should be underway by minute 1."
+    },
+    {
+      "text": "Suggests where re-engagements should be added",
+      "passed": true,
+      "evidence": "Problem 5 is specifically about missing re-engagements and states: '3-minute re-engagement: Insert a high-spectacle, instantly-understood moment' and '6-minute re-engagement: A story-critical development that pushes the narrative into the back half.' The recommended restructure table also shows re-engagements at ~3 min and ~6 min."
+    },
+    {
+      "text": "Notes that the winner shouldn't be teased or signaled — reveal only at the very end",
+      "passed": true,
+      "evidence": "Problem 6 states: 'Never frame any segment as \"the outro\" in your planning. The winner reveal should be the absolute last thing that happens. Cut immediately after the winner is revealed — no outro, no \"thanks for watching,\" no subscribe plea. End abruptly on the highest emotional moment.'"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 1,
+    "output_chars": 5321,
+    "skill_used": true
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Sponsor should be moved to minute 3-4, after viewer investment is established",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response explicitly recommends: 'Move the sponsor to minute 3–4, after viewer investment is established.' and 'Sponsors should be placed at minute 3–4 or 8–9 (mid-lull), never in the first 2 minutes.' This is actionable and specific."
+    },
+    {
+      "claim": "The recommended restructure provides an alternative minute-by-minute table",
+      "type": "factual",
+      "verified": true,
+      "evidence": "A complete restructure table is included, mapping all 15 minutes with correct segment assignments including re-engagements."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the critique explicitly uses the hook-transition-build-payoff framework by name or in a structured way. The response does reference it, but an assertion that the restructure explicitly follows this framework would be more discriminating."
+      }
+    ],
+    "overall": "Assertions are well-targeted. All six pass clearly with strong evidence. The only gap is that no assertion verifies the quality of the alternative structure proposed."
+  }
+}

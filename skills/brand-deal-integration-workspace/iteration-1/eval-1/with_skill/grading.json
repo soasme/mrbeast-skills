@@ -1,0 +1,88 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends placement at approximately the 6-9 minute mark (back half, after lull begins)",
+      "passed": true,
+      "evidence": "Response explicitly states: 'Place the HydroMax segment at the 7–8 minute mark (in a 13-minute video, this falls squarely in the back half, after the second re-engagement beat).' This directly matches the 6-9 minute recommendation."
+    },
+    {
+      "text": "The segment ties HydroMax naturally to the desert survival context (thematic relevance)",
+      "passed": true,
+      "evidence": "Response states: 'Dehydration is literally the central threat in a Sahara survival video. This is not a forced integration — this is the ideal sponsor.' The script itself shows the host depleted in the desert, saying 'I've been rationing water' before introducing HydroMax."
+    },
+    {
+      "text": "The segment includes a visual or physical demonstration, not just talking",
+      "passed": true,
+      "evidence": "Script includes stage direction: '[Holds up HydroMax packet, tears it open, mixes it into water bottle on camera]' and '[Takes a drink]' — explicit visual/physical demonstration."
+    },
+    {
+      "text": "The segment is scripted to feel conversational, not like a read script",
+      "passed": true,
+      "evidence": "The script uses first-person admission of struggle ('I have not had a full night of sleep'), hedging ('I genuinely think'), and a casual sign-off ('Alright. Back to trying not to die.') — clearly conversational rather than marketing copy."
+    },
+    {
+      "text": "Runtime recommendation is under 60 seconds",
+      "passed": true,
+      "evidence": "Response explicitly states: '**Runtime target:** 45 seconds' — well under the 60-second ceiling."
+    },
+    {
+      "text": "Includes a simple CTA (URL or promo code) at the end of the segment",
+      "passed": true,
+      "evidence": "Script ends with: 'I'll put a link in the description — use code BEAST for 25% off your first order.' — contains both a URL reference and a promo code."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2847,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "HydroMax is a perfect thematic fit for this video",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Dehydration is explicitly the core survival threat in a Sahara desert video — the thematic alignment is genuine and strong."
+    },
+    {
+      "claim": "The segment is 45 seconds",
+      "type": "factual",
+      "verified": true,
+      "evidence": "The script as written is plausibly 40-50 seconds at natural speaking pace — consistent with the 45-second target claim."
+    },
+    {
+      "claim": "The 'back to trying not to die' sign-off is a natural transition",
+      "type": "quality",
+      "verified": true,
+      "evidence": "It references the video's survival theme and is casual, avoiding the 'okay, back to the video!' problem flagged in the skill."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks that the response avoids the 'This video is brought to you by...' opener — the skill explicitly flags this as a critical anti-pattern. A baseline response could satisfy all 6 expectations while still opening with the forbidden phrase."
+      },
+      {
+        "reason": "No assertion checks that the segment transitions naturally out of the video's story rather than feeling bolted on. The quality of the in/out transitions is as important as the segment content itself."
+      }
+    ],
+    "overall": "Assertions are well-targeted and discriminating. The two gaps are the absence of a check against the explicit anti-patterns (forbidden opener) and transition quality."
+  }
+}

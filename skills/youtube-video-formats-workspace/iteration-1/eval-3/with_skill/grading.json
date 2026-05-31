@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies an open-loop question that drives viewers to the end (who wins? who fails worse?)",
+      "passed": true,
+      "evidence": "Response explicitly frames the open-loop: 'The answer: Who performs worse? (or: Who actually produces better food in an unfamiliar environment?)' and states 'This creates an open-loop question in the first 60 seconds. Viewers pick sides, form predictions, and must watch to see if they're right.'"
+    },
+    {
+      "text": "Structures the video as parallel tracks that converge at payoff",
+      "passed": true,
+      "evidence": "Response has a dedicated 'Story Structure: Two Parallel Tracks' section with 'Track A: You in the Michelin kitchen' and 'Track B: The chef in your home kitchen', explicitly noting 'The two tracks should converge roughly 70% through the video, where both kitchens are preparing their final dishes for the judging moment.'"
+    },
+    {
+      "text": "Designs a specific payoff moment (e.g., blind taste test, professional judge, customer reactions)",
+      "passed": true,
+      "evidence": "Response designs a detailed blind taste test payoff with 'Professional food critics', 'Michelin restaurant regular customers', and a multi-step reveal sequence: taste without knowing which kitchen, scores announced, then reveal which kitchen made which dish."
+    },
+    {
+      "text": "Recommends showing early failures from both kitchens to build investment",
+      "passed": true,
+      "evidence": "Response states: 'Show genuine failures from BOTH tracks early. If viewers think one side is obviously winning early, they stop watching. The race needs to feel competitive or at minimum uncertain.' Track A explicitly includes 'Show an early failure (burned dish, wrong technique)' and Track B has 'Show an early failure (overcooked on a cheap stove).'"
+    },
+    {
+      "text": "Notes that the outcome must not be revealed before the payoff moment",
+      "passed": true,
+      "evidence": "Response states in the open-loop hook section: 'Do NOT hint at the result. Do not say 'what happened next shocked everyone' or show reaction clips from the end.' Also in 'What to Avoid': 'Revealing the outcome early: Any hint of who performed better before the blind taste test kills the format.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 3498,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The video should end immediately after the payoff reaction without cooldown",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response states 'Cut immediately after the reveal and reaction. Do not add commentary.' This directly reflects the skill's payoff checklist: 'The video ends immediately after the payoff — no cooldown needed.'"
+    },
+    {
+      "claim": "The format is primarily Chase/Outcome-Unknown",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response classifies: 'This is primarily a Chase/Outcome-Unknown format with parallel tracks' — matches the skill's Chase format definition: 'Outcome — whether they're caught or escape — is genuinely unknown.'"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the response warns against a simple chronological day-by-day vlog structure, which the expected output explicitly calls out ('Should avoid just listing Day 1, Day 2...'). The response does address this in 'What to Avoid' but no expectation verifies it."
+      }
+    ],
+    "overall": "All 5 expectations pass with strong evidence. The skill-guided response correctly applies parallel track structure, open-loop question, specific payoff design, early failures from both sides, and protects the outcome until the payoff."
+  }
+}

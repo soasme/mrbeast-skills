@@ -1,0 +1,73 @@
+{
+  "expectations": [
+    {
+      "text": "Produces exactly 5 title variations",
+      "passed": true,
+      "evidence": "The response contains exactly 5 ranked title variations: Rank 1 through Rank 5, each clearly labeled and distinct."
+    },
+    {
+      "text": "At least one title uses a survival/extreme verb (Survived, Bought Everything, Emptied)",
+      "passed": true,
+      "evidence": "Rank 1 uses 'Bought EVERYTHING' and Rank 2 uses 'Emptied An Entire Dollar Store' — both are extreme verbs listed in the expectation."
+    },
+    {
+      "text": "At least one title uses a dollar amount or scale indicator",
+      "passed": true,
+      "evidence": "Rank 1 includes '$10,000 Worth' and Rank 3 also includes '$10,000'. Both are dollar amount scale indicators."
+    },
+    {
+      "text": "Titles are ranked 1-5 by predicted CTR with reasoning for the ranking",
+      "passed": true,
+      "evidence": "All 5 titles are ranked 1–5 with detailed explanations for each rank. For example, Rank 1 explains: 'The dollar amount ($10,000) creates instant scale... EVERYTHING signals completeness and commitment.' Rank 5 explains why it is last: 'Present participle (-ing) verbs feel passive and low-energy.'"
+    },
+    {
+      "text": "The top-ranked title is more extreme/intriguing than the weakest one",
+      "passed": true,
+      "evidence": "Rank 1 ('I Bought EVERYTHING In A Dollar Store ($10,000 Worth) And Gave It All Away') uses extreme language, dollar scale, and complete action. Rank 5 ('Buying Every Item In A Dollar Store And Giving Them Away') uses passive -ing construction with no dollar amount. The contrast is explicit and clear."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 2,
+    "output_chars": 3012,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The top title wins because it combines scale via dollar amount, extreme action ('EVERYTHING'), and open loop",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The response explicitly lists these reasons in the CTR Principle Summary section and in Rank 1's explanation."
+    },
+    {
+      "claim": "5 titles use different formats (survival, record, dollar amount, constraint)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Rank 1: dollar amount format; Rank 2: extreme verb/completeness; Rank 3: dollar amount + constraint; Rank 4: outcome + social hook; Rank 5: neutral/descriptive. Each format is distinct."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No expectation checks whether titles are structurally distinct (not just word swaps). The expected_output mentions this but no assertion enforces it. The with_skill response does satisfy this, but it wouldn't be caught if a response used 5 nearly identical structures."
+      }
+    ],
+    "overall": "Evals are well-designed and discriminating. The one gap is that structural diversity of titles is mentioned in expected_output but not in the graded expectations array."
+  }
+}

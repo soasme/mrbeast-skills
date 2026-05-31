@@ -1,0 +1,67 @@
+{
+  "expectations": [
+    {
+      "text": "Correctly diagnoses the title as generic/low-extremity",
+      "passed": true,
+      "evidence": "The response states: 'Helping Homeless People Find Homes is too generic. It reads like a news headline or a charity campaign tagline — not a YouTube video that promises something remarkable.' Specific issues cited: no scale, no emotional hook, competes with everything similar."
+    },
+    {
+      "text": "Identifies the thumbnail as showing a generic conversation scene with no hook",
+      "passed": true,
+      "evidence": "The response states: 'A creator talking to a person on a street corner is the default image for homelessness content. It's: A conversation, not a climax; Familiar and forgettable — exactly what viewers scroll past; Not promising anything — it shows the problem, not any resolution or spectacle.'"
+    },
+    {
+      "text": "Rewritten title adds scale, number, or outcome (e.g., 'I Gave 100 Homeless People...', '$1,000,000 to Homeless Families')",
+      "passed": true,
+      "evidence": "Option 1: 'I Got 100 Homeless People Off The Streets' (number + outcome). Option 2: 'I Paid To House 50 Homeless Families For A Year' (number + duration). Option 3: '$500,000 To End Homelessness In One City' (dollar amount). All three meet the expectation."
+    },
+    {
+      "text": "Rewritten thumbnail concept shows transformation, scale, or emotional peak moment",
+      "passed": true,
+      "evidence": "Option A: 'formerly homeless person opening the door to their new home for the first time, face filled with emotion' (emotional peak). Option B: 'wide shot showing many people standing outside housing' (scale). Option C: before/after split (transformation). All three meet the expectation."
+    },
+    {
+      "text": "Explicitly notes that the rewrite must not misrepresent the content (expectations must be met)",
+      "passed": true,
+      "evidence": "The 'Important Note on Accuracy' section states: 'Any rewrite must stay truthful to the video's content... Misleading titles and thumbnails generate clicks but cause viewers to leave quickly, which signals YouTube to stop recommending the video.' The caveat is explicit and substantive."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "output_chars": 2993,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Titles and thumbnails that mislead viewers into clicking but not watching hurt YouTube recommendation",
+      "type": "quality",
+      "verified": true,
+      "evidence": "This is an accurate statement of how YouTube's algorithm works — high CTR with low watch time and high bounce rate signals low-quality content."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "All expectations pass for both with_skill and without_skill on Eval 3 as well. The evals do not discriminate between the baseline model and the skill. The skill adds depth (e.g., the 'thumbnail contract' principle, production implications, specific skill framework terminology), but none of the expectations test for these differentiators. Consider adding: 'Response cites the principle that thumbnail creates a promise/contract with viewers' or 'Response provides production implications for the rewritten content.'"
+      }
+    ],
+    "overall": "Expectations are substantive but not discriminating enough between skilled and baseline performance. Both responses pass all 5. Adding assertions for skill-specific frameworks would improve discriminability."
+  }
+}

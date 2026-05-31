@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies this as format fatigue / format saturation",
+      "passed": true,
+      "evidence": "Response states 'your audience has seen the format enough times to predict how it goes' and 'format fatigue is normal.' The concept is identified even without using the precise skill terminology."
+    },
+    {
+      "text": "Recommends not running same format back-to-back (minimum 2-3 other formats in between)",
+      "passed": false,
+      "evidence": "Response recommends 'spacing last-to-leave videos further apart — quarterly rather than monthly' and 'mix in different formats' but never specifies the 2-3 other-format-in-between rule. The advice is frequency-based (quarterly spacing) rather than format-rotation-based. No minimum number of intervening formats is given."
+    },
+    {
+      "text": "Suggests either resting the format temporarily or adding a significant twist",
+      "passed": true,
+      "evidence": "Response suggests both: 'take a break and return with an event' (resting temporarily) and 'add a twist mechanic' giving contestants ability to affect each other. Both options are present."
+    },
+    {
+      "text": "References the principle that viewers don't actually want the same format forever",
+      "passed": false,
+      "evidence": "Response says 'format fatigue is normal' and 'no single format stays fresh forever' but does not address the specific paradox that viewers say they want more of the same format but engagement drops when given it. The skill's insight about the gap between stated preference and actual behavior is absent."
+    },
+    {
+      "text": "Provides at least one concrete innovation idea for making the format feel fresh",
+      "passed": true,
+      "evidence": "Response provides 'voting mechanics, sabotage options, deals and alliances' and changing the setting ('last to leave a submarine'). These are concrete, actionable innovation ideas."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.6
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2258,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Frequency reduction (quarterly instead of monthly) is the primary fix",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The skill frames the fix as format rotation (specific number of different formats between repeats), not calendar spacing. Calendar spacing alone can still result in back-to-back same-format videos if that's all you're publishing."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The expectation about the viewer paradox ('viewers don't actually want the same format forever') is the most discriminating assertion here — it specifically tests for the skill's counterintuitive insight. The baseline fails it cleanly. This is a well-designed expectation."
+      }
+    ],
+    "overall": "The baseline misses two key skill-specific insights: the explicit 2-3 format rotation rule, and the viewer stated-preference paradox. These are the most valuable parts of the skill guidance and the evals correctly surface their absence."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies this as format fatigue / format saturation",
+      "passed": true,
+      "evidence": "Response opens with 'Diagnosis: Format Fatigue' and explicitly labels it 'format saturation': 'After 8 last-to-leave videos in a year, your audience has internalized the format's structure... There's no more structural surprise. The format is doing less work.'"
+    },
+    {
+      "text": "Recommends not running same format back-to-back (minimum 2-3 other formats in between)",
+      "passed": true,
+      "evidence": "Response states under Short-Term Fixes: 'The rule is: at least 2–3 different-format videos between any repeat of the same format.' and 'Schedule your next last-to-leave video no sooner than after 3 other format videos.'"
+    },
+    {
+      "text": "Suggests either resting the format temporarily or adding a significant twist",
+      "passed": true,
+      "evidence": "Response provides both options explicitly: 'Option A: Rest the Format (Recommended)' recommending a 2–3 month break, and 'Option B: Retire and Re-Innovate' with specific twist examples (stair-stepping layer, chase element, social manipulation layer)."
+    },
+    {
+      "text": "References the principle that viewers don't actually want the same format forever",
+      "passed": true,
+      "evidence": "Response states: 'your audience may tell you they want more last-to-leave videos... but if you give it to them immediately, engagement drops anyway. What viewers say they want and what actually retains them are different things.'"
+    },
+    {
+      "text": "Provides at least one concrete innovation idea for making the format feel fresh",
+      "passed": true,
+      "evidence": "Response provides multiple concrete innovations: 'Last 10 people each win $1K; last 5 get $5K each; final winner gets $100K' (stair-step layer), chase agent who can eliminate contestants, social voting/trading mechanics, and a combined format example: 'I bought progressively larger houses and placed 10 contestants in each house.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 3421,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "10+ total executions of a format marks the threshold for genuine exhaustion",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Directly sourced from skill document: 'If it's been done 10+ times, the format has diminishing returns.'"
+    },
+    {
+      "claim": "The combined format example in the skill is 'stair-stepping + survival + last-to-leave'",
+      "type": "factual",
+      "verified": true,
+      "evidence": "The response reproduces the exact combined format example from the skill document almost verbatim."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "All 5 expectations pass with strong evidence. The skill-guided response correctly applies the 2-3 format separation rule, format fatigue diagnosis, viewer behavior paradox, and innovation examples. Evals are well-calibrated for this question."
+  }
+}

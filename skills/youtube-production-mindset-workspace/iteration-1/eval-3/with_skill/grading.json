@@ -1,0 +1,79 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends immediate escalation (not waiting) to leadership/director",
+      "passed": true,
+      "evidence": "Response states: 'get on the phone with the director and executive producer right now — not in 30 minutes, not after another attempt.' First action item in the table: 'Now | Call leadership, alert director. Do not delay.'"
+    },
+    {
+      "text": "Recommends exploring creative alternatives to pyrotechnics in parallel",
+      "passed": true,
+      "evidence": "Response has an entire section 'Explore All Alternatives in Parallel' covering smoke machines, confetti cannons, LED flash rigs, different camera angles, and reframing the shot. Explicitly calls for parallel execution."
+    },
+    {
+      "text": "Mentions the principle of 'can this failure become content?'",
+      "passed": true,
+      "evidence": "Response has a dedicated section titled 'Ask: Can This Failure Become Content?' and provides specific examples: 'The FX team frantically trying to make it work, the creator's genuine reaction to the malfunction, a comedic we tried sequence.'"
+    },
+    {
+      "text": "Recommends contacting other FX vendors or specialists immediately (no does not mean no)",
+      "passed": true,
+      "evidence": "Response states: 'Contact other FX vendors or specialists immediately. No from the current team is not the final answer. Call every FX contact in the network right now.' Also states in the underlying principle section: 'No from the pyrotechnics team is not the final answer.'"
+    },
+    {
+      "text": "Does not recommend just 'skipping the scene' without exploring all options first",
+      "passed": true,
+      "evidence": "Response has explicit 'What Not to Do' section: 'Do not just skip the finale scene without exploring every option first. Skipping a planned scene because something didn't work — without exhausting alternatives — is accepting a worse video without a fight.'"
+    },
+    {
+      "text": "References the importance of having a backup plan (and asks why there wasn't one)",
+      "passed": true,
+      "evidence": "Response has a full section 'The Question You Should Also Be Asking Right Now' which asks 'Why wasn't there a backup plan for this?' and lists what pre-production should have included: backup FX approach, pre-shoot test run, and a protocol for this scenario."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 1,
+    "total_steps": 2,
+    "errors_encountered": 0,
+    "output_chars": 4105,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Pyrotechnics failure can become 'the best moments in a video'",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Consistent with the skill's principle that unexpected failures can become the funniest moments — the claim is directionally accurate for the genre."
+    },
+    {
+      "claim": "Decision priority table provided with timing guidance",
+      "type": "factual",
+      "verified": true,
+      "evidence": "A time-sequenced table is present in the response with 'Now', 'Next 15 min', 'Next 30 min', and 'Ongoing' action items."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the response correctly advises capturing the failure on camera as it's happening (not just retrospectively). The response does mention this ('Tell camera team: capture the FX team's troubleshooting') but no expectation validates it."
+      }
+    ],
+    "overall": "All six expectations are met with specific, substantive evidence. The response goes beyond surface compliance — it applies the skill's frameworks with concrete examples and a time-structured action plan."
+  }
+}

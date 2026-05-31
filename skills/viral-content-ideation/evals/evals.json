@@ -1,0 +1,47 @@
+{
+  "skill_name": "viral-content-ideation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Brainstorm 5 viral YouTube video concepts using a rubber duck as the central object or theme. For each concept, provide: a draft title, one-sentence premise, the wow factor moment, format, and a CTR score (1-5).",
+      "expected_output": "5 distinct concepts using the 3-angle expansion framework (competition, scale, constraint). Each should have an extreme title, instantly-understandable premise, a specific wow-factor moment (something no other creator could do), identified format, and CTR score with rationale.",
+      "files": [],
+      "expectations": [
+        "Produces exactly 5 distinct concepts (not minor variations of the same idea)",
+        "At least one concept uses a scale angle (world's largest, 10,000 rubber ducks, etc.)",
+        "At least one concept uses a competition or outcome-unknown angle",
+        "Each concept includes a specific wow factor moment (not generic)",
+        "Titles use extreme/superlative language and pass the 6-word simplicity test",
+        "CTR scores are differentiated (not all rated 5)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A creator wants to do a video about teaching kids coding. The budget is $5,000. They say they need at least $50,000 to make it good. Apply the 'creativity saves money' principle to redesign the concept so it's more interesting AND costs under $5,000.",
+      "expected_output": "A redesigned concept that uses creative alternatives to money: a competition format, finding kids who already can code and having them face off, using free/donated prizes, finding a corporate sponsor, making the 'low budget' itself part of the hook. Should explicitly apply the principle that creativity is the answer, not budget.",
+      "files": [],
+      "expectations": [
+        "Reframes the concept to be more creative rather than just more expensive",
+        "Provides at least one specific budget-saving creative alternative",
+        "The redesigned concept is MORE interesting than the original expensive version",
+        "Explicitly applies the 'creativity saves money' principle",
+        "New concept stays under or at $5,000",
+        "Draft title for the redesigned concept uses extreme/hook language"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Evaluate these two video ideas using the 5-dimension idea rubric (CTR potential, simplicity, wow factor, emotional investment, format fit). Score each on all 5 dimensions and recommend which to produce:\n\nIdea A: 'I trained for 1 year with an Olympic swimming coach and then competed against the coach'\nIdea B: 'I built a swimming pool out of 50,000 water balloons'",
+      "expected_output": "Scores for both ideas on all 5 dimensions with reasoning. Idea B likely scores higher on CTR (visual uniqueness) and wow factor, while Idea A scores higher on emotional investment and format fit. The recommendation should clearly state which to produce and why, with suggestions for how to improve the weaker idea.",
+      "files": [],
+      "expectations": [
+        "Scores both ideas on all 5 dimensions (CTR, simplicity, wow factor, emotional investment, format fit)",
+        "Scores are differentiated between the two ideas — not identical",
+        "Clear recommendation for which idea to produce with reasoning",
+        "Notes that Idea A has emotional investment but weak thumbnail/CTR potential",
+        "Notes that Idea B has strong CTR and wow factor but needs a stronger format/payoff",
+        "Suggests improvements for the weaker idea"
+      ]
+    }
+  ]
+}

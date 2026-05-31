@@ -1,0 +1,73 @@
+{
+  "expectations": [
+    {
+      "text": "Produces exactly 5 title variations",
+      "passed": true,
+      "evidence": "The response lists exactly 5 ranked titles: Rank 1 through Rank 5, all clearly labeled."
+    },
+    {
+      "text": "At least one title uses a survival/extreme verb (Survived, Bought Everything, Emptied)",
+      "passed": true,
+      "evidence": "Rank 1 uses 'Bought EVERYTHING' (all-caps for emphasis). Rank 3 uses 'Emptied an Entire Dollar Store'. Both are extreme verbs."
+    },
+    {
+      "text": "At least one title uses a dollar amount or scale indicator",
+      "passed": true,
+      "evidence": "Rank 2 includes '$5,000' as a specific dollar amount scale indicator."
+    },
+    {
+      "text": "Titles are ranked 1-5 by predicted CTR with reasoning for the ranking",
+      "passed": true,
+      "evidence": "All 5 titles include ranking rationale. For example Rank 1: 'EVERYTHING creates a sense of scale and absurdity... people immediately wonder how much did that cost.' Rank 5: 'doesn't create much curiosity. No sense of scale, no dollar amount, and the passive framing.'"
+    },
+    {
+      "text": "The top-ranked title is more extreme/intriguing than the weakest one",
+      "passed": true,
+      "evidence": "Rank 1 uses 'EVERYTHING' (all-caps, scale, generosity). Rank 5 ('Giving Away Everything From the Dollar Store') is described as 'weakest option' with 'passive framing' and no scale. The contrast between them is real and explained."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "output_chars": 2148,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Rank 4 uses 'Challenge' framing which is familiar to YouTube audiences",
+      "type": "quality",
+      "verified": true,
+      "evidence": "This is a standard YouTube content insight — 'Challenge' format videos are a recognized genre on the platform."
+    },
+    {
+      "claim": "The response covers different formats (challenge, scale, verb-driven, dollar amount, descriptive)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Rank 1: extreme verb + EVERYTHING; Rank 2: dollar amount; Rank 3: extreme verb + social; Rank 4: Challenge format; Rank 5: descriptive. Formats are reasonably varied."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The without_skill response passes all 5 expectations, suggesting the baseline knowledge is already sufficient for this eval. The expectations may not discriminate enough between skill-guided and baseline responses. Consider adding an expectation that checks for the specific CTR framework terms from the skill (e.g., 'extremity rule', 'survival format', 'open loop') to measure whether the skill adds distinct framing beyond what a capable baseline provides."
+      }
+    ],
+    "overall": "Both with_skill and without_skill responses pass all expectations. The expectations may need to be more discriminating — for instance, requiring production implications or use of specific skill-defined formats (survival, world record, constraint) to differentiate skill-guided responses."
+  }
+}

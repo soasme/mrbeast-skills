@@ -1,0 +1,84 @@
+{
+  "expectations": [
+    {
+      "text": "Clearly states that no contact for 5 days is not acceptable",
+      "passed": true,
+      "evidence": "Response opens with: 'Going five days without contact from a contractor building a critical prop is not a neutral situation — it is an active risk.' and the short answer section begins: 'No, This Is Not Okay.'"
+    },
+    {
+      "text": "Uses or references the 'dump-and-forget' failure pattern",
+      "passed": true,
+      "evidence": "Response explicitly names it: 'You are experiencing the classic production failure pattern: dump-and-forget. You assigned the work, gave them a deadline, and walked away. That is not contractor management. That is hoping.'"
+    },
+    {
+      "text": "Recommends establishing daily check-ins starting immediately",
+      "passed": true,
+      "evidence": "Response states: 'From this point forward, you have a daily check-in with this contractor. Not weekly. Not whenever there is an update. Daily.'"
+    },
+    {
+      "text": "Recommends requesting video updates of progress (not just status messages)",
+      "passed": true,
+      "evidence": "Response states: 'A request for video updates of the work in progress — not photos, not text updates. Video. You need to see the castle being built. Is the scale right? Is the color right?'"
+    },
+    {
+      "text": "Recommends setting an internal deadline earlier than the actual shoot date",
+      "passed": true,
+      "evidence": "Response states: 'The internal deadline you give them should be 1 week before the actual shoot — or at minimum 5 days before. This gives you time to inspect the finished prop and identify problems.'"
+    },
+    {
+      "text": "Recommends starting a backup option in parallel",
+      "passed": true,
+      "evidence": "Response has a full section titled 'Build a Backup Option in Parallel' with specific backup options described and explains: 'A 50/50 critical prop is a 50/50 video. Build the backup before you need it, not after the crisis.'"
+    },
+    {
+      "text": "Notes that if the castle is critical to the video, the producer is responsible — not the contractor — if it fails",
+      "passed": true,
+      "evidence": "Response states: 'If the contractor fails and you didn't check in daily, that failure is on you — not on the contractor.' and in the Accountability Rule section: 'You own the production outcome.'"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 1,
+    "total_steps": 2,
+    "errors_encountered": 0,
+    "output_chars": 3892,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "If the contractor hasn't been given daily check-in requirements, the producer is responsible for the outcome",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Clearly stated and supported by the skill's contractor accountability framework."
+    },
+    {
+      "claim": "Silence from contractor is a risk, not reassurance",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Entire section 'Why Silence Is a Risk, Not Reassurance' addresses this with specific reasoning: problems surface only through visibility; no news means no visibility."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The expectation about 'dump-and-forget' would pass for any response that uses the phrase, even superficially. A stronger assertion would check that the response explains the mechanism of why dump-and-forget fails (no visibility into problems), not just names the pattern."
+      }
+    ],
+    "overall": "All seven expectations are clearly met with substantive evidence. The response directly applies each skill concept rather than approximating them."
+  }
+}

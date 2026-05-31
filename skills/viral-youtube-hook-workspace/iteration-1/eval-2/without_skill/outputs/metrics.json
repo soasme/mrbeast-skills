@@ -1,0 +1,9 @@
+{
+  "tool_calls": {
+    "Write": 1
+  },
+  "total_tool_calls": 1,
+  "skill_used": false,
+  "output_chars": 1823,
+  "notes": "Without-skill baseline run: general YouTube best practices critique without reading SKILL.md"
+}

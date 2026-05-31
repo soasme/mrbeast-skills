@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "Correctly identifies B as higher CTR with clear reasoning",
+      "passed": true,
+      "evidence": "The response opens unambiguously: 'Verdict: B gets dramatically higher CTR' and provides a detailed multi-section analysis explaining why across 4 distinct principles."
+    },
+    {
+      "text": "Explains the role of 'World's Longest' as a scale/superlative trigger",
+      "passed": true,
+      "evidence": "Section 'Scale as a Trigger' explicitly states: \"'World's' is a scale word — it implies the entire globe has been considered and this surpasses everything. Scale language reliably drives clicks because it signals something genuinely unusual is being shown.\""
+    },
+    {
+      "text": "Thumbnail concept for B emphasizes scale (person dwarfed by pasta, measurement visible)",
+      "passed": true,
+      "evidence": "The thumbnail concept for B states: 'An aerial or wide-angle shot showing a single strand of pasta stretching impossibly far... A person at one end looks tiny next to the pasta, creating an immediate sense of scale.' This directly matches the expectation."
+    },
+    {
+      "text": "Notes that thumbnail A has no obvious visual hook",
+      "passed": true,
+      "evidence": "The section on Option A states: 'There is no obvious visual hook. Homemade pasta looks like... pasta... is an unremarkable image... even a great photo here won't create curiosity.' Also in the summary table: 'Visual hook: None.'"
+    },
+    {
+      "text": "References the principle that extremity outperforms neutral framing",
+      "passed": true,
+      "evidence": "Section '1. Extremity Outperforms Neutral Language — Always' explicitly states: 'The more extreme or superlative a title sounds, the higher the curiosity pull.' This is a direct invocation of the skill's core extremity rule."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 2,
+    "output_chars": 3901,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Option A would have a CTR of 2-4% and Option B 8-15%+",
+      "type": "factual",
+      "verified": false,
+      "evidence": "These are reasonable industry estimates for YouTube CTR ranges, but specific numbers cannot be verified without actual YouTube analytics data. They serve as illustrative benchmarks."
+    },
+    {
+      "claim": "The thumbnail and title are a 'unit' that must work together",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The 'Thumbnail/Title Alignment' section of the response explicitly discusses how the thumbnail and title form a contract and must point at the same thing — consistent with skill guidance."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions. The evals are solid and the with_skill response genuinely demonstrates deep application of skill principles. All expectations are met with substantive, non-superficial evidence."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "skill_name": "brand-deal-integration",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write an integrated brand deal segment for a survival challenge video ('I Survived 7 Days in the Sahara Desert') sponsored by a hydration supplement brand called 'HydroMax'. The video is 13 minutes long. Where should the segment be placed, and what should it look and sound like?",
+      "expected_output": "A placement recommendation (6-9 minute mark after second re-engagement), and a segment script/plan that ties the sponsor into the desert survival context naturally (dehydration = perfect fit), is entertaining (not a script read), includes a visual demonstration, runs under 60 seconds, and has a simple CTA.",
+      "files": [],
+      "expectations": [
+        "Recommends placement at approximately the 6-9 minute mark (back half, after lull begins)",
+        "The segment ties HydroMax naturally to the desert survival context (thematic relevance)",
+        "The segment includes a visual or physical demonstration, not just talking",
+        "The segment is scripted to feel conversational, not like a read script",
+        "Runtime recommendation is under 60 seconds",
+        "Includes a simple CTA (URL or promo code) at the end of the segment"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's a traditional brand deal script. Rewrite it to be an integrated brand deal that won't crater retention:\n\n'This video is brought to you by BetterSleep app. Are you struggling to get a good night's rest? BetterSleep has over 60 million downloads and has helped millions of people fall asleep faster. Use code BEAST for 30% off. Okay, back to the video!'",
+      "expected_output": "A rewritten version that: removes the 'brought to you by' opener, ties the product to the video's context, makes it conversational and entertaining, includes a visual or bit, and doesn't feel like a scripted read. Should be clearly better at retaining viewers.",
+      "files": [],
+      "expectations": [
+        "Removes the 'This video is brought to you by...' opener",
+        "Ties BetterSleep to the video context (if context unknown, creates a relatable scenario)",
+        "Rewrites in conversational tone, not marketing copy",
+        "Includes a suggestion for a visual or physical bit",
+        "Preserves the promo code / CTA at the end",
+        "The rewrite is clearly more entertaining than the original"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need to place 2 brand deals in a 12-minute video about a $500,000 obstacle course competition with 20 contestants. What placement strategy should I use, what types of integrations fit best, and what common mistakes should I avoid?",
+      "expected_output": "A placement strategy that puts both deals in the back half (approximately minutes 6-7 and 9-10), with integration strategies tied to the competition context (energy drinks, athletic brands fit well). Should flag the common mistakes (front-loading ads, scripted reads, sponsor placement before the action starts) and explain why the back half works better.",
+      "files": [],
+      "expectations": [
+        "Recommends placing both brand deals in the back half (after minute 6)",
+        "Does not recommend placing any brand deal in the first 5 minutes",
+        "Suggests integration strategies tied to the obstacle course competition context",
+        "Lists specific common mistakes to avoid",
+        "Notes that 2 brand deals in a 12-minute video is manageable if placed correctly",
+        "Advises separating the two brand deals (not back-to-back)"
+      ]
+    }
+  ]
+}

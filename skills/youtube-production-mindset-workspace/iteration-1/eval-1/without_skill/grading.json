@@ -1,0 +1,80 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies the facility as the primary critical component (no facility = no video)",
+      "passed": true,
+      "evidence": "Response identifies the facility as Component 1: 'The venue is the foundation of everything. Without a confirmed, accessible pool facility, nothing else matters.'"
+    },
+    {
+      "text": "Identifies the custom floating obstacles as a critical component",
+      "passed": true,
+      "evidence": "Response explicitly lists 'Custom Floating Obstacles' as component 2: 'These are likely central to the video concept and thumbnail.'"
+    },
+    {
+      "text": "Identifies 20 contestants as a critical component (video likely needs minimum count)",
+      "passed": true,
+      "evidence": "Response explicitly lists 'The 20 Contestants' as component 3 and notes 'People are unpredictable. Getting 20 people to show up reliably on shoot day requires active management.'"
+    },
+    {
+      "text": "For each component, recommends daily check-ins or equivalent tracking",
+      "passed": false,
+      "evidence": "For the facility, recommends confirming '1 week before and again 48 hours before shoot' — not daily check-ins. For obstacles, recommends updates 'at each milestone' with no daily cadence specified. For contestants, recommends reminders 'at 1 week, 3 days, and 1 day before shoot' — not daily. No daily check-in cadence is mentioned for any component."
+    },
+    {
+      "text": "Recommends asking for video updates (not just photos) from contractors building obstacles",
+      "passed": false,
+      "evidence": "Response recommends 'progress photos or updates at each milestone' but also includes 'short video clips' as an option when discussing contractors generally (not specifically obstacles). The emphasis is on photos first, video as secondary. Does not strongly recommend video over photos as the skill prescribes."
+    },
+    {
+      "text": "Recommends negotiating a backup day with the facility",
+      "passed": false,
+      "evidence": "Response says 'Identify a backup facility in case of cancellation' — suggesting a different venue as backup, not negotiating an extension day into the current contract. The skill-specific concept of negotiating a backup day with the same venue is absent."
+    },
+    {
+      "text": "Notes that standard shipping should not be trusted for critical props",
+      "passed": false,
+      "evidence": "No mention of shipping concerns for critical props anywhere in the response. The response discusses transportation logistics briefly ('Plan for transportation to the facility') but does not warn against standard shipping."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.43
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2614,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Equipment and safety logistics are 'more easily substituted or solved day-of'",
+      "type": "quality",
+      "verified": false,
+      "evidence": "This is an overly optimistic claim — equipment failure day-of for a water production is a significant risk. The skill's philosophy explicitly pushes against this kind of day-of resolution mindset."
+    },
+    {
+      "claim": "Camera and production equipment identified as a critical component",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Response adds equipment as Component 4, which is a reasonable addition not contradicted by the eval expectations."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Baseline response correctly identifies the three main critical components but misses the specific mechanics from the skill: daily check-in cadence, video-first updates for contractors, backup day negotiation (vs. backup venue), and shipping warnings. The gap between with_skill and without_skill is meaningful and the assertions discriminate well."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "skill_name": "viral-youtube-hook",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write the first 60 seconds of a YouTube video called 'I Survived 100 Hours Buried Underground'. The thumbnail shows the creator in a small dirt chamber with a flashlight. Write what is seen and said in the opening, making sure it hooks viewers and matches the thumbnail expectation.",
+      "expected_output": "A detailed opening script/plan for 0-60 seconds that: immediately shows/confirms the underground chamber from the thumbnail, has good visual staging, front-loads the most interesting/extreme content, establishes stakes clearly, has no filler warmup language, and sets up what the viewer signed up for.",
+      "files": [],
+      "expectations": [
+        "The opening immediately references or shows the underground chamber (matching thumbnail)",
+        "No 'in today's video we're going to...' or similar filler warmup",
+        "Stakes are established within the first 60 seconds (hours remaining, rules, what's at stake)",
+        "The opening plan includes specific visual instructions, not just dialogue",
+        "The 60-second plan transitions naturally into the 1-3 minute execution phase"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Review this video opening and tell me what's wrong with it from a retention perspective:\n\n'Hey guys, what's up, welcome back to my channel. So today we have a really really cool video for you. Uh, before we get into it make sure to hit that subscribe button and the bell icon so you never miss a video. Today's video is sponsored by NordVPN. Okay so basically what we're doing today is we're going to be surviving in the world's largest ball pit for 24 hours. I know I know it sounds crazy but we actually got permission from...'",
+      "expected_output": "A critique that identifies specific retention-killing mistakes: the slow warmup, the subscribe ask in first 30 seconds, the sponsor placement, the slow premise reveal, and the lack of immediate visual confirmation of the concept. Should reference specific principles like matching thumbnail expectations, front-loading content, no filler.",
+      "files": [],
+      "expectations": [
+        "Identifies the slow warmup opening as a retention killer",
+        "Flags the subscribe/bell ask in the first 30 seconds as a mistake",
+        "Flags the sponsor read appearing before the premise is even established",
+        "Notes that the ball pit concept isn't visually shown until well into the script",
+        "Provides specific recommendations for how to rewrite the opening"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I'm making a video called 'World's Largest Slip N Slide' and the thumbnail shows a massive 500-foot inflatable water slide with a crowd of people at the top. Plan the transition from the hook (first 60 sec) into the 1-3 minute section using 'crazy progression'. What specific content should appear in minutes 1-3 to build viewer investment?",
+      "expected_output": "A plan for minutes 1-3 that: confirms the thumbnail in opening seconds, uses crazy progression to compress multiple early beats (first runs, reactions, escalations), reaches an emotional investment point by minute 3, and sets up a re-engagement spectacle around the 3-minute mark.",
+      "files": [],
+      "expectations": [
+        "Opening 15 seconds confirms the massive slide from the thumbnail",
+        "Minutes 1-3 plan uses crazy progression (compresses multiple events, not just shows setup)",
+        "By minute 3 viewer should be emotionally invested in outcome",
+        "A 3-minute re-engagement moment is planned (spectacle that raises stakes)",
+        "Plan avoids slow setup/explanation — shows execution immediately"
+      ]
+    }
+  ]
+}

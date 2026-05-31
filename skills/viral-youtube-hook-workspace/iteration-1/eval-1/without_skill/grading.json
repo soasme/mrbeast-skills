@@ -1,0 +1,77 @@
+{
+  "expectations": [
+    {
+      "text": "The opening immediately references or shows the underground chamber (matching thumbnail)",
+      "passed": false,
+      "evidence": "The baseline opens with 'the creator standing outside next to a freshly dug hole in the ground' — not in the chamber. The thumbnail shows the creator IN the chamber with a flashlight. The creator doesn't reach the underground chamber until roughly 15-30 seconds in during the 'Descent' section. The opening does not immediately confirm the thumbnail premise."
+    },
+    {
+      "text": "No 'in today's video we're going to...' or similar filler warmup",
+      "passed": false,
+      "evidence": "The script opens with: 'Hey guys! What is up, today's video is absolutely insane. I am literally about to go underground for 100 hours. That's over four days — buried alive, basically. We've been planning this for weeks and I cannot believe we're actually doing this.' This is a textbook filler warmup — 'Hey guys, what is up' plus hype-talk before any premise delivery."
+    },
+    {
+      "text": "Stakes are established within the first 60 seconds (hours remaining, rules, what's at stake)",
+      "passed": true,
+      "evidence": "During the Descent section: 'no cheating, no leaving early' and 'I have food, water, and a flashlight. 100 hours.' The clock countdown appears at the end: '100:00:00'. The stakes are minimal compared to with-skill (no rules, no consequence for leaving, no dramatic framing) but hours remaining and basic premise are established within 60 seconds."
+    },
+    {
+      "text": "The opening plan includes specific visual instructions, not just dialogue",
+      "passed": true,
+      "evidence": "There are some visual directions: 'Cut to showing the chamber: a ladder going down', 'Creator shows what they've brought down', 'Creator looks directly at camera, flashlight in hand'. However these are generic compared to with-skill. The response does include some visual staging even if sparse."
+    },
+    {
+      "text": "The 60-second plan transitions naturally into the 1-3 minute execution phase",
+      "passed": false,
+      "evidence": "The plan ends at '100:00:00. Countdown starts.' and does not describe any transition to minutes 1-3. The Setup section (30-50 sec) shows the creator explaining/listing supplies rather than transitioning to execution. There is no crazy progression or time-compression element described. The plan stops at the clock starting rather than showing what happens immediately after."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.40
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Write": 1
+    },
+    "total_tool_calls": 1,
+    "output_chars": 1612,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Opening starts with creator outside, not in the chamber",
+      "type": "factual",
+      "verified": true,
+      "evidence": "First line: 'creator standing outside next to a freshly dug hole' — this is not what thumbnail shows"
+    },
+    {
+      "claim": "Filler warmup used ('Hey guys! What is up')",
+      "type": "factual",
+      "verified": true,
+      "evidence": "First sentence of spoken dialogue is 'Hey guys! What is up' — explicit filler warmup"
+    },
+    {
+      "claim": "Plan is shorter and less detailed than with-skill version",
+      "type": "quality",
+      "verified": true,
+      "evidence": "1612 chars vs 3847 chars for with-skill. Missing: silence beat, sensory hooks, dramatic camera work, transition sequence"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions. The failing expectations are clearly evidenced and meaningful."
+  }
+}

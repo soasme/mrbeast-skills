@@ -1,0 +1,82 @@
+{
+  "expectations": [
+    {
+      "text": "The opening immediately references or shows the underground chamber (matching thumbnail)",
+      "passed": true,
+      "evidence": "Opening Beat (0-15 sec) states: 'The video opens MID-ACTION — not before the burial, not at setup. The creator is already inside the underground chamber. The shot is tight: dirt walls on all sides, low ceiling, the flashlight casting dramatic shadows.' Explicitly notes 'The chamber, immediately.' Thumbnail (creator in dirt chamber with flashlight) confirmed within 2 seconds per the response."
+    },
+    {
+      "text": "No 'in today's video we're going to...' or similar filler warmup",
+      "passed": true,
+      "evidence": "The response explicitly bans this: 'No title card montage. The chamber, immediately.' The script opens with: 'I'm already underground. This chamber is roughly 8 feet by 6 feet — and I have to survive here for 100 hours.' No filler warmup language present. The checklist at the end explicitly verifies: 'No "in today's video we're going to..." language' with a checkmark."
+    },
+    {
+      "text": "Stakes are established within the first 60 seconds (hours remaining, rules, what's at stake)",
+      "passed": true,
+      "evidence": "Premise Lock section (45-60 sec) establishes: 'Every 10 hours, I get a check-in. A phone goes down through a tube in the wall — one minute to talk, then it goes back up.' The Hook Sequence (15-45 sec) states: 'No phone signal down here. One box of food, two gallons of water — calculated exactly.' Clock shows Hour 0:00 and countdown begins. Hours remaining explicitly called out: '99:47:00. Ticking.' at end of 60-sec section."
+    },
+    {
+      "text": "The opening plan includes specific visual instructions, not just dialogue",
+      "passed": true,
+      "evidence": "Rich visual direction throughout: 'The shot is tight: dirt walls on all sides, low ceiling, the flashlight casting dramatic shadows', 'The creator pans the flashlight slowly around the chamber — dirt walls, a small cot, a sealed water jug, and a clock on the wall showing Hour 0:00', 'Quick cuts begin — the tight space from multiple angles', 'sealed wooden hatch being closed over the hole, a padlock clicking shut, and then darkness except for the flashlight', 'Clock graphic: 100:00:00 — countdown begins. Timestamped in the corner.'"
+    },
+    {
+      "text": "The 60-second plan transitions naturally into the 1-3 minute execution phase",
+      "passed": true,
+      "evidence": "Transition Signal section (60-90 sec) explicitly covers this: 'Time-lapse begins. The clock on the wall advances visibly. The creator goes through early-hour motions... We compress hours 1 through 12 into 25 seconds of footage — not narrated, just music and visuals.' The response notes: 'The transition stops explaining and starts executing. The viewer is already 14 hours in with the creator, emotionally invested before the 2-minute mark.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Read": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "output_chars": 3847,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Thumbnail promise confirmed within first 2 seconds",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response opens mid-action in the chamber, host is already underground with flashlight — matches thumbnail exactly"
+    },
+    {
+      "claim": "No filler warmup language used",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Script goes directly: 'I'm already underground...' — no greeting, no welcome back, no improv warmup"
+    },
+    {
+      "claim": "Silence beat used as retention device",
+      "type": "quality",
+      "verified": true,
+      "evidence": "'Dead silence on the audio for 3 full seconds. Just the faint sound of the creator breathing.' — creative sensory hook not present in baseline"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the SKILL.md four-beat output format (Opening Beat, Hook Sequence, Premise Lock, Transition Signal) was followed — this is the skill's required format and distinguishes a skilled response from a generic one."
+      }
+    ],
+    "overall": "Assertions are well-targeted and the with-skill response satisfies all of them with clear evidence. Adding a format-structure assertion would better discriminate skill vs. no-skill runs."
+  }
+}

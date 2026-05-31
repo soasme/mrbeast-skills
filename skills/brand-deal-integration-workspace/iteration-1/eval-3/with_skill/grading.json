@@ -1,0 +1,79 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends placing both brand deals in the back half (after minute 6)",
+      "passed": true,
+      "evidence": "Placement table explicitly shows Deal #1 at 'Minutes 6–7' and Deal #2 at 'Minutes 9–10'. Both are after minute 6."
+    },
+    {
+      "text": "Does not recommend placing any brand deal in the first 5 minutes",
+      "passed": true,
+      "evidence": "Response states: 'Neither deal goes before minute 6. The first 5 minutes are entirely off-limits — that's when viewers decide if they're watching the whole thing.' No early placement is recommended anywhere."
+    },
+    {
+      "text": "Suggests integration strategies tied to the obstacle course competition context",
+      "passed": true,
+      "evidence": "Response provides specific context-tied strategies: athletic/performance brands shown via contestant use, mobile games as side-competition bets. Both are directly tied to the obstacle course competition format and physical competition theme."
+    },
+    {
+      "text": "Lists specific common mistakes to avoid",
+      "passed": true,
+      "evidence": "Response has a dedicated 'Common Mistakes to Avoid' section with 5 numbered, named mistakes: front-loading sponsors, back-to-back segments, scripted reads that pause competition, sponsors before action escalates, and thematically unconnected brands."
+    },
+    {
+      "text": "Notes that 2 brand deals in a 12-minute video is manageable if placed correctly",
+      "passed": true,
+      "evidence": "Response opens with: 'Yes — two brand deals in 12 minutes is entirely workable, but placement and execution both need to be correct.' Explicitly confirms manageability with correct placement."
+    },
+    {
+      "text": "Advises separating the two brand deals (not back-to-back)",
+      "passed": true,
+      "evidence": "Response explicitly states: 'Do not run both deals back-to-back. A viewer who sits through one sponsor segment will tolerate it. Two in a row signals "this is an ad break" and they leave.' And: 'Separate the two deals by at least 2–3 minutes of competition content.'"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 3342,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Two sponsors back-to-back 'signals an ad break and viewers leave'",
+      "type": "quality",
+      "verified": true,
+      "evidence": "This is consistent with the skill's retention-graph framework and YouTube viewer behavior patterns described in the skill document."
+    },
+    {
+      "claim": "The 'retention effect' section accurately describes the outcome difference",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The description of 'two small dips — minor and recoverable' for correct placement vs. 'two large craters' for incorrect placement is consistent with the skill's core principle about retention graphs."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks that the response explains *why* the back half works better — the reasoning (viewer investment, retention graph behavior) is arguably more valuable than the placement numbers alone. A response could list correct timestamps while giving wrong reasoning."
+      }
+    ],
+    "overall": "Solid evals. All 6 assertions are discriminating and were satisfied by the skill-guided response. Minor gap: reasoning for placement is not checked, only the placement numbers."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "expectations": [
+    {
+      "text": "Scores both ideas on all 5 dimensions (CTR, simplicity, wow factor, emotional investment, format fit)",
+      "passed": true,
+      "evidence": "Both ideas scored on all 5 dimensions in table format. Idea A: CTR=3, Simplicity=4, Wow=3, Emotional=4, Format=4. Idea B: CTR=5, Simplicity=5, Wow=4, Emotional=2, Format=3."
+    },
+    {
+      "text": "Scores are differentiated between the two ideas — not identical",
+      "passed": true,
+      "evidence": "Scores differ: CTR (3 vs 5), Simplicity (4 vs 5), Wow (3 vs 4), Emotional (4 vs 2), Format (4 vs 3). Totals are 18 vs 19, which is differentiated but only slightly."
+    },
+    {
+      "text": "Clear recommendation for which idea to produce with reasoning",
+      "passed": true,
+      "evidence": "'Recommendation: Produce Idea B' with reasoning: 'higher overall and has stronger immediate appeal (CTR, simplicity, wow factor).' Recommendation is present and clear."
+    },
+    {
+      "text": "Notes that Idea A has emotional investment but weak thumbnail/CTR potential",
+      "passed": false,
+      "evidence": "Idea A's emotional investment is scored 4 (not 5), and CTR is scored 3. The response notes 'Interesting premise but needs a compelling thumbnail' for CTR but does NOT specifically identify the fundamental thumbnail problem — that you cannot show '1 year of training' in a single image. The note 'Person vs. their own coach is relatable' is generic. The skill-guided response identifies 'the thumbnail problem' as 'Idea A's fatal flaw' with specific reasoning; the baseline merely notes it 'needs a compelling thumbnail' without identifying why this is a structural weakness."
+    },
+    {
+      "text": "Notes that Idea B has strong CTR and wow factor but needs a stronger format/payoff",
+      "passed": true,
+      "evidence": "Format fit=3 with note 'Great for a short video but may struggle to hold attention over 15+ minutes' and suggestion to add 'Can I actually swim through 50,000 water balloons?' challenge. Addresses the format/payoff weakness."
+    },
+    {
+      "text": "Suggests improvements for the weaker idea",
+      "passed": false,
+      "evidence": "For Idea A, the response says 'emphasize the personal narrative more and add clearer visual moments for the thumbnail — show the training montage highlights and the dramatic face-off moment.' This is too vague to be actionable. No specific changes to the title, stakes, or structural format are suggested. Compare to the skill-guided response which gives 3 specific improvements with concrete examples."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 2,
+    "total": 6,
+    "pass_rate": 0.667
+  },
+  "execution_metrics": {
+    "output_chars": 1612,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Idea B scores higher overall",
+      "type": "factual",
+      "verified": true,
+      "evidence": "19 vs 18 — technically true but the margin is small and does not reflect how much stronger Idea B is on the most important dimensions"
+    },
+    {
+      "claim": "Idea A scores higher on emotional investment",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Idea A emotional investment = 4, Idea B = 2"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Notes that Idea A has emotional investment but weak thumbnail/CTR potential",
+        "reason": "The assertion is satisfied by the baseline mentioning 'needs a compelling thumbnail' but the QUALITY of insight matters. Consider requiring the response to specifically identify why Idea A cannot be thumbnailed (not just that it's hard) — that would better distinguish skill-guided analysis from generic advice."
+      },
+      {
+        "assertion": "Suggests improvements for the weaker idea",
+        "reason": "The assertion passes when improvements are 'specific and actionable' but the current language doesn't define specificity level. The baseline's vague suggestions technically satisfy 'provides improvements' — adding a criterion like 'provides at least 2 concrete title/format/stakes changes' would make this expectation more discriminating."
+      }
+    ],
+    "overall": "Some expectations need tighter specificity requirements to better discriminate between vague baseline advice and the structured, specific improvements the skill produces."
+  }
+}

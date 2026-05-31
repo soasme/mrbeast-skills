@@ -1,0 +1,67 @@
+{
+  "expectations": [
+    {
+      "text": "Correctly identifies B as higher CTR with clear reasoning",
+      "passed": true,
+      "evidence": "The response opens: 'B) \"I Made The World's Longest Piece of Pasta\" will get significantly higher CTR.' Reasons given include curiosity gap, scale/records, and word choice — all substantive."
+    },
+    {
+      "text": "Explains the role of 'World's Longest' as a scale/superlative trigger",
+      "passed": true,
+      "evidence": "The 'Scale and Records Drive Clicks' section states: \"'World's Longest' is a powerful hook because it implies a record or achievement that has never been done before... It creates a comparison point.\" This addresses the superlative/scale trigger role."
+    },
+    {
+      "text": "Thumbnail concept for B emphasizes scale (person dwarfed by pasta, measurement visible)",
+      "passed": true,
+      "evidence": "The thumbnail concept for B includes: 'A single strand of pasta stretching from one end of a room (or outdoor space) to the other, with the creator standing at the far end, looking tiny in comparison.' This matches the expectation of a person dwarfed by the pasta."
+    },
+    {
+      "text": "Notes that thumbnail A has no obvious visual hook",
+      "passed": true,
+      "evidence": "Under Thumbnail for A: 'Homemade pasta is a common subject. Even a beautiful thumbnail won't make this stand out from hundreds of similar cooking videos.' The response explicitly identifies the lack of a visual hook and the challenge of differentiation."
+    },
+    {
+      "text": "References the principle that extremity outperforms neutral framing",
+      "passed": true,
+      "evidence": "The summary states: 'titles and thumbnails that show or imply something unusual, record-breaking, or visually spectacular will almost always outperform neutral descriptions of familiar activities.' This is a direct statement of the extremity principle."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "output_chars": 2751,
+    "transcript_chars": 0,
+    "errors": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Title A is 'perfectly fine for a cooking channel'",
+      "type": "quality",
+      "verified": true,
+      "evidence": "This is accurate — the title is not misleading or poor in absolute terms, just outperformed by B in the YouTube CTR context."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "Both with_skill and without_skill responses pass all 5 expectations on Eval 2. This eval may not discriminate between skill-guided and baseline outputs. Consider adding expectations that specifically require citing the 'open loop' principle, the thumbnail/title contract concept, or other skill-specific terminology to detect whether the skill materially improved the response."
+      }
+    ],
+    "overall": "All expectations pass for baseline run. The eval correctly tests important CTR concepts, but the concepts tested (scale, superlatives, visual hook) are general enough that a strong baseline model can satisfy them without the skill. Higher-bar assertions would help differentiate."
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "skill_name": "youtube-video-formats",
+    "timestamp": "2026-06-01T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "Extreme hot sauce stair-stepping format",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends the stair-stepping format by name or description",
+        "Explains that each heat level must be higher/more extreme than the last",
+        "States that the most extreme sauce must be revealed at the end (never early)",
+        "Includes ideas for what makes individual sauce segments entertaining beyond just eating",
+        "Notes a strong payoff structure at the finale (world's hottest sauce)"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "Extreme hot sauce stair-stepping format",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Recommends the stair-stepping format by name or description",
+        "Explains that each heat level must be higher/more extreme than the last",
+        "States that the most extreme sauce must be revealed at the end (never early)",
+        "Includes ideas for what makes individual sauce segments entertaining beyond just eating",
+        "Notes a strong payoff structure at the finale (world's hottest sauce)"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Last-to-leave format fatigue diagnosis and strategy",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies this as format fatigue / format saturation",
+        "Recommends not running same format back-to-back (minimum 2-3 other formats in between)",
+        "Suggests either resting the format temporarily or adding a significant twist",
+        "References the principle that viewers don't actually want the same format forever",
+        "Provides at least one concrete innovation idea for making the format feel fresh"
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Last-to-leave format fatigue diagnosis and strategy",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies this as format fatigue / format saturation",
+        "Recommends not running same format back-to-back (minimum 2-3 other formats in between)",
+        "Suggests either resting the format temporarily or adding a significant twist",
+        "References the principle that viewers don't actually want the same format forever",
+        "Provides at least one concrete innovation idea for making the format feel fresh"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Chef kitchen swap format design",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies an open-loop question that drives viewers to the end (who wins? who fails worse?)",
+        "Structures the video as parallel tracks that converge at payoff",
+        "Designs a specific payoff moment (e.g., blind taste test, professional judge, customer reactions)",
+        "Recommends showing early failures from both kitchens to build investment",
+        "Notes that the outcome must not be revealed before the payoff moment"
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Chef kitchen swap format design",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        "Identifies an open-loop question that drives viewers to the end (who wins? who fails worse?)",
+        "Structures the video as parallel tracks that converge at payoff",
+        "Designs a specific payoff moment (e.g., blind taste test, professional judge, customer reactions)",
+        "Recommends showing early failures from both kitchens to build investment",
+        "Notes that the outcome must not be revealed before the payoff moment"
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.20",
+      "time_seconds": "0",
+      "tokens": "0"
+    }
+  },
+  "notes": [
+    "With-skill runs achieved perfect pass rates (1.0) on all 3 evals.",
+    "Without-skill runs averaged 0.80 pass rate, with the largest gap on eval 2 (format fatigue: 0.60 vs 1.0).",
+    "Eval 2 was the most discriminating: the skill provides two specific insights the baseline missed — the 2-3 format rotation rule (vs. generic 'space them out' advice) and the viewer stated-preference paradox (viewers say they want more but engagement drops anyway).",
+    "Eval 1 showed moderate separation: baseline missed the specific 'stair-stepping' named format but correctly applied the escalation principle.",
+    "Eval 3 showed no separation on pass rate (both 1.0), but qualitative analysis reveals the baseline fell into the day-by-day vlog structure trap that the skill explicitly warns against. The evals lack an assertion to catch this difference — a gap worth addressing.",
+    "The skill adds most value for format-naming precision and rotation rules. The open-loop/payoff principles appear to be general enough that a capable baseline model applies them naturally.",
+    "Recommendation: Add an assertion to eval 3 checking whether the response warns against chronological day-by-day structure to increase discriminating power."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "expectations": [
+    {
+      "text": "Clearly states that no contact for 5 days is not acceptable",
+      "passed": true,
+      "evidence": "Response opens with: 'No, this is not ideal. Going 5 days without any update from a contractor building a significant prop is a passive approach to production management.'"
+    },
+    {
+      "text": "Uses or references the 'dump-and-forget' failure pattern",
+      "passed": false,
+      "evidence": "The response describes the behavior pattern ('You've set a deadline and assumed that's enough') but never names it as 'dump-and-forget' or uses the specific terminology from the skill. The pattern is implied but not named."
+    },
+    {
+      "text": "Recommends establishing daily check-ins starting immediately",
+      "passed": false,
+      "evidence": "Response says 'Set a schedule for regular updates — every 2-3 days at minimum.' This explicitly falls short of daily check-ins. The 'every 2-3 days' recommendation is meaningfully weaker than the skill's 'daily' prescription."
+    },
+    {
+      "text": "Recommends requesting video updates of progress (not just status messages)",
+      "passed": true,
+      "evidence": "Response says 'Ask for photos or short video clips of the work in progress so you can visually confirm the prop is developing as expected.' Video updates are mentioned alongside photos."
+    },
+    {
+      "text": "Recommends setting an internal deadline earlier than the actual shoot date",
+      "passed": true,
+      "evidence": "Response states: 'If the shoot is in 3 weeks, consider asking for the prop to be complete 5-7 days before that.'"
+    },
+    {
+      "text": "Recommends starting a backup option in parallel",
+      "passed": false,
+      "evidence": "Response asks 'Is there a simpler version of the prop that could work in a pinch?' as a contingency consideration, but frames this as a question under 'Plan for the Worst Case' rather than a concrete recommendation to build a backup in parallel now. It does not instruct starting a backup immediately."
+    },
+    {
+      "text": "Notes that if the castle is critical to the video, the producer is responsible — not the contractor — if it fails",
+      "passed": false,
+      "evidence": "No mention of producer accountability or responsibility for contractor outcomes. The response is framed as advice without the explicit accountability assignment that the skill prescribes."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.43
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 1873,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "'The situation isn't a crisis yet, but it's heading in a risky direction'",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The skill's framework would classify 5 days of silence on a critical prop as already a crisis-level risk that requires immediate escalation, not a 'heading in a risky direction' framing. This understates the urgency."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "The baseline response gives generally sound generic advice but misses the specific, opinionated mechanics from the skill: daily (not every 2-3 days) check-ins, naming the dump-and-forget pattern, explicit producer accountability, and building a backup now rather than considering it contingently. The gap is meaningful."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends immediate escalation (not waiting) to leadership/director",
+      "passed": true,
+      "evidence": "Step 5 states: 'make sure whoever is creatively leading the production knows what's happening and is part of the decision.' However, this is framed as Step 5 in a sequence rather than as the very first action, which weakens the immediacy. It does not say 'call right now' or 'don't wait.' Borderline pass — escalation is mentioned but not urgently prioritized."
+    },
+    {
+      "text": "Recommends exploring creative alternatives to pyrotechnics in parallel",
+      "passed": true,
+      "evidence": "Step 3 covers alternatives: 'Call other FX vendors or rental companies... Look for practical alternatives... Reframe the shot.' Step 2 also frames parallel work: 'while you simultaneously work on alternatives.'"
+    },
+    {
+      "text": "Mentions the principle of 'can this failure become content?'",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of turning the failure into content, capturing the failure, or treating the malfunction as a content opportunity. This concept is entirely absent."
+    },
+    {
+      "text": "Recommends contacting other FX vendors or specialists immediately (no does not mean no)",
+      "passed": true,
+      "evidence": "Step 3 explicitly states: 'Call other FX vendors or rental companies — can someone get equipment or a technician to the location in time?'"
+    },
+    {
+      "text": "Does not recommend just 'skipping the scene' without exploring all options first",
+      "passed": false,
+      "evidence": "Step 6 says: 'If you end up skipping the planned finale, capture the best alternative ending available.' This accepts skipping as a valid path without requiring exhaustion of all alternatives first. The commit-to-a-decision framing in Step 4 also essentially plans for skipping: 'If we don't have a working pyro solution by 2 hours from now, we pivot to Plan B' without specifying what Plan B is or requiring all alternatives be explored."
+    },
+    {
+      "text": "References the importance of having a backup plan (and asks why there wasn't one)",
+      "passed": false,
+      "evidence": "No mention of backup planning, why a backup should have existed, or what lessons should be drawn from this crisis. The response focuses entirely on in-the-moment problem solving without acknowledging the pre-production failure."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2247,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "'Four hours is enough time to adapt if you act quickly'",
+      "type": "quality",
+      "verified": false,
+      "evidence": "This may be optimistic depending on the complexity of the pyrotechnics setup and location. The claim is unverifiable from the prompt context but reflects generally sound urgency framing."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "The baseline response is a competent generic crisis-management answer but misses three of the six skill-specific behaviors: treating failure as content, the explicit anti-skip principle, and the backup planning postmortem. The gaps are meaningful and clearly discriminate the skill response from the baseline."
+  }
+}

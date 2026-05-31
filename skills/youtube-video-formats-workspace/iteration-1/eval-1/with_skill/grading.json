@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends the stair-stepping format by name or description",
+      "passed": true,
+      "evidence": "Response explicitly states 'Format: Stair-Stepping (Progressive Escalation)' as the section header and names it directly: 'This concept is a textbook case for the stair-stepping format.'"
+    },
+    {
+      "text": "Explains that each heat level must be higher/more extreme than the last",
+      "passed": true,
+      "evidence": "Response states 'each sauce is hotter, more extreme, and more dramatic than the last' and provides a structured escalation table showing progressive Scoville increases from mild (~450) through to 3,000,000+."
+    },
+    {
+      "text": "States that the most extreme sauce must be revealed at the end (never early)",
+      "passed": true,
+      "evidence": "Response includes a 'Critical Rule' section: 'Never place the world-record sauce anywhere but the very end' and explicitly warns against hinting at the finale result before it happens."
+    },
+    {
+      "text": "Includes ideas for what makes individual sauce segments entertaining beyond just eating",
+      "passed": true,
+      "evidence": "Response includes 'A reaction challenge', 'Guests or guests-at-risk', 'Visual heat indicators', and 'Running commentary on what's ahead' as engagement layers beyond pure eating."
+    },
+    {
+      "text": "Notes a strong payoff structure at the finale (world's hottest sauce)",
+      "passed": true,
+      "evidence": "Response has a dedicated 'The Finale (Payoff)' section with specific mechanics: introduce final sauce with stakes, capture full unedited reaction, end immediately after aftermath reaction."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2891,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The stair-stepping format is a textbook match for progressive hot sauce videos",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The skill document confirms stair-stepping 'Best for: Comparison videos, budget escalations, world record attempts' — hot sauce escalation maps directly to this."
+    },
+    {
+      "claim": "The viewer logic is: if the $1,000 version was cool, I need to see the $100,000 version",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Skill document contains this exact viewer logic formulation. Response adapts it to hot sauce context correctly."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "None of the expectations explicitly check whether the response warns against revealing the final sauce visually or in the hook — the 'never reveal early' principle is partially covered but an assertion about the hook specifically would add discriminating power."
+      }
+    ],
+    "overall": "Strong evals that correctly test the core stair-stepping format principles. All 5 expectations are discriminating and the response satisfied all of them with substantive evidence."
+  }
+}

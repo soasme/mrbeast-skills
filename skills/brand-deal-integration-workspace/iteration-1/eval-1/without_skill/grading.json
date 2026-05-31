@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends placement at approximately the 6-9 minute mark (back half, after lull begins)",
+      "passed": false,
+      "evidence": "Response says 'around the 5–7 minute mark' — this is only partially in the 6-9 range. More critically, it also suggests 'Some creators also do the sponsor at the end' as an alternative, and does not ground the recommendation in retention theory or the concept of viewer investment. The 5-minute start is too early per the skill's placement table."
+    },
+    {
+      "text": "The segment ties HydroMax naturally to the desert survival context (thematic relevance)",
+      "passed": true,
+      "evidence": "Response states: 'HydroMax is a great fit for this video because dehydration is the core challenge' and the script references 'Being out here in the Sahara, staying hydrated is the most important thing.'"
+    },
+    {
+      "text": "The segment includes a visual or physical demonstration, not just talking",
+      "passed": true,
+      "evidence": "Response includes: 'Hold up the packet and maybe mix it into your water bottle on camera' — a visual demonstration suggestion is present, though it's in a tips section rather than scripted into the segment itself."
+    },
+    {
+      "text": "The segment is scripted to feel conversational, not like a read script",
+      "passed": false,
+      "evidence": "The script opens with 'This video is brought to you by HydroMax!' — a formal marketing opener explicitly identified as a retention-killing pattern. It then lists product features ('scientifically formulated blend of electrolytes') in marketing language. The segment reads as a script, not a conversation."
+    },
+    {
+      "text": "Runtime recommendation is under 60 seconds",
+      "passed": false,
+      "evidence": "No runtime recommendation is given anywhere in the response. The segment itself is moderately long but no explicit target duration is stated."
+    },
+    {
+      "text": "Includes a simple CTA (URL or promo code) at the end of the segment",
+      "passed": true,
+      "evidence": "Script ends with: 'Use code BEAST for 20% off at hydromax.com. Seriously, check it out — link in the description!' — contains promo code and URL reference."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 1621,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Filming in the desert environment makes the sponsor feel authentic",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Valid point — environmental consistency is important for believability."
+    },
+    {
+      "claim": "The segment is natural and not forced",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The script opens with 'This video is brought to you by HydroMax!' — the most recognizable forced-ad opener on YouTube. The claim contradicts the actual content."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No additional suggestions. The existing assertions successfully discriminated between the skill-guided and baseline responses."
+  }
+}

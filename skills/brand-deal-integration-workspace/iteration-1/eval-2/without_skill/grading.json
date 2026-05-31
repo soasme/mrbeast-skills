@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "Removes the 'This video is brought to you by...' opener",
+      "passed": true,
+      "evidence": "The rewritten script begins with 'Hey, before we get back to it — I want to tell you about something I've actually been using.' The forbidden opener is not present."
+    },
+    {
+      "text": "Ties BetterSleep to the video context (if context unknown, creates a relatable scenario)",
+      "passed": true,
+      "evidence": "The rewrite creates a relatable scenario: 'after a crazy day of filming something like this, your brain just won't shut off' — provides a contextual hook even without knowing the specific video."
+    },
+    {
+      "text": "Rewrites in conversational tone, not marketing copy",
+      "passed": false,
+      "evidence": "The rewrite still includes 'It has like meditations, sleep sounds, breathing exercises — stuff that actually calms your brain down' which is feature-listing. More critically, '60 million people have downloaded it, so clearly it works for a lot of people' is marketing-copy logic. The overall script reads as a polished but still promotional read, not a genuine conversation."
+    },
+    {
+      "text": "Includes a suggestion for a visual or physical bit",
+      "passed": false,
+      "evidence": "No visual or physical bit is suggested. The 'What I changed' analysis section mentions 'Made it relatable' and 'Kept the key stats and CTA' but never suggests showing the app, demonstrating it, or adding any visual element. The script is entirely verbal."
+    },
+    {
+      "text": "Preserves the promo code / CTA at the end",
+      "passed": true,
+      "evidence": "Script ends with 'Use code BEAST for 30% off. Link in the description.' — code and discount preserved."
+    },
+    {
+      "text": "The rewrite is clearly more entertaining than the original",
+      "passed": false,
+      "evidence": "The rewrite improves the opener but keeps the same structural shape as the original: brief hook, feature list, stat, CTA, return to video. The 'Now back to the video!' ending mirrors the original's 'Okay, back to the video!' — the fundamental pacing and entertainment problem is not solved. It is marginally better but not clearly more entertaining."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 1327,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The rewrite 'reads more like how someone would actually talk'",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The script still uses feature-listing and stat-quoting patterns typical of marketing copy. The claim is partially true (opener is more natural) but overstated overall."
+    },
+    {
+      "claim": "The relatable setup creates a reason to care about the product",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The filming-exhaustion setup is relatable and provides a genuine contextual reason for the product recommendation."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No additional suggestions. Assertions correctly identified the rewrite's shortcomings."
+  }
+}

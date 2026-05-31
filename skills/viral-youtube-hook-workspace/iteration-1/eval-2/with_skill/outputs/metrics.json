@@ -1,0 +1,11 @@
+{
+  "tool_calls": {
+    "Read": 2,
+    "Write": 1
+  },
+  "total_tool_calls": 3,
+  "skill_used": true,
+  "skill_path": "skills/viral-youtube-hook/SKILL.md",
+  "output_chars": 4821,
+  "notes": "With-skill run: identified all 5 retention killers using the SKILL.md common mistakes table and checklist principles, provided specific rewrite"
+}

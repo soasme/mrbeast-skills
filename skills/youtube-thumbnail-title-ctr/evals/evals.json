@@ -1,0 +1,44 @@
+{
+  "skill_name": "youtube-thumbnail-title-ctr",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate 5 YouTube title variations for this video concept: A creator buys every item in a dollar store and gives them all away. Rank them by predicted CTR and explain why the top title would outperform the others.",
+      "expected_output": "5 distinct titles using different formats (survival/record/constraint/number), ranked with reasoning. The best title should use extremity, a dollar amount or scale, and create curiosity. Each title should be different in structure (not just word swaps).",
+      "files": [],
+      "expectations": [
+        "Produces exactly 5 title variations",
+        "At least one title uses a survival/extreme verb (Survived, Bought Everything, Emptied)",
+        "At least one title uses a dollar amount or scale indicator",
+        "Titles are ranked 1-5 by predicted CTR with reasoning for the ranking",
+        "The top-ranked title is more extreme/intriguing than the weakest one"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Compare these two video concepts and tell me which will get higher CTR, and why:\nA) 'I Tried Making Homemade Pasta'\nB) 'I Made The World's Longest Piece of Pasta'\n\nAlso suggest thumbnail concepts for each that would maximize clicks.",
+      "expected_output": "Clear analysis explaining why B has higher CTR (extremity, scale, superlative), how the title signals something visual and impressive, and thumbnail concepts that visually confirm the promise. The analysis should reference specific CTR principles like extremity, single dominant visual, implied scale.",
+      "files": [],
+      "expectations": [
+        "Correctly identifies B as higher CTR with clear reasoning",
+        "Explains the role of 'World's Longest' as a scale/superlative trigger",
+        "Thumbnail concept for B emphasizes scale (person dwarfed by pasta, measurement visible)",
+        "Notes that thumbnail A has no obvious visual hook",
+        "References the principle that extremity outperforms neutral framing"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A creator made a video about helping homeless people get off the street, but the CTR is low. The current title is 'Helping Homeless People Find Homes'. The thumbnail shows the creator talking to a person on a street corner. Diagnose the CTR problem and rewrite both the title and thumbnail concept to improve clicks without misrepresenting the content.",
+      "expected_output": "Diagnosis that the title is vague/generic with no extremity or scale, and the thumbnail has no visual hook. Rewritten title should add scale ('100 Homeless People'), outcomes ('Found Homes For 50 Homeless Families'), or emotional hook. Thumbnail should show the transformation/payoff or a striking visual, not just a conversation.",
+      "files": [],
+      "expectations": [
+        "Correctly diagnoses the title as generic/low-extremity",
+        "Identifies the thumbnail as showing a generic conversation scene with no hook",
+        "Rewritten title adds scale, number, or outcome (e.g., 'I Gave 100 Homeless People...', '$1,000,000 to Homeless Families')",
+        "Rewritten thumbnail concept shows transformation, scale, or emotional peak moment",
+        "Explicitly notes that the rewrite must not misrepresent the content (expectations must be met)"
+      ]
+    }
+  ]
+}

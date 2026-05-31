@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "skill_name": "viral-youtube-hook",
+    "timestamp": "2026-06-01T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "Write first 60 seconds for underground survival video",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "The opening immediately references or shows the underground chamber (matching thumbnail)", "passed": true},
+        {"text": "No 'in today's video we're going to...' or similar filler warmup", "passed": true},
+        {"text": "Stakes are established within the first 60 seconds (hours remaining, rules, what's at stake)", "passed": true},
+        {"text": "The opening plan includes specific visual instructions, not just dialogue", "passed": true},
+        {"text": "The 60-second plan transitions naturally into the 1-3 minute execution phase", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "Write first 60 seconds for underground survival video",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.40,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "The opening immediately references or shows the underground chamber (matching thumbnail)", "passed": false},
+        {"text": "No 'in today's video we're going to...' or similar filler warmup", "passed": false},
+        {"text": "Stakes are established within the first 60 seconds (hours remaining, rules, what's at stake)", "passed": true},
+        {"text": "The opening plan includes specific visual instructions, not just dialogue", "passed": true},
+        {"text": "The 60-second plan transitions naturally into the 1-3 minute execution phase", "passed": false}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Critique a retention-killing video opening",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Identifies the slow warmup opening as a retention killer", "passed": true},
+        {"text": "Flags the subscribe/bell ask in the first 30 seconds as a mistake", "passed": true},
+        {"text": "Flags the sponsor read appearing before the premise is even established", "passed": true},
+        {"text": "Notes that the ball pit concept isn't visually shown until well into the script", "passed": true},
+        {"text": "Provides specific recommendations for how to rewrite the opening", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Critique a retention-killing video opening",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.80,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Identifies the slow warmup opening as a retention killer", "passed": true},
+        {"text": "Flags the subscribe/bell ask in the first 30 seconds as a mistake", "passed": true},
+        {"text": "Flags the sponsor read appearing before the premise is even established", "passed": true},
+        {"text": "Notes that the ball pit concept isn't visually shown until well into the script", "passed": false},
+        {"text": "Provides specific recommendations for how to rewrite the opening", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Plan hook-to-minutes-1-3 transition with crazy progression",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Opening 15 seconds confirms the massive slide from the thumbnail", "passed": true},
+        {"text": "Minutes 1-3 plan uses crazy progression (compresses multiple events, not just shows setup)", "passed": true},
+        {"text": "By minute 3 viewer should be emotionally invested in outcome", "passed": true},
+        {"text": "A 3-minute re-engagement moment is planned (spectacle that raises stakes)", "passed": true},
+        {"text": "Plan avoids slow setup/explanation — shows execution immediately", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Plan hook-to-minutes-1-3 transition with crazy progression",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.40,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 1,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Opening 15 seconds confirms the massive slide from the thumbnail", "passed": true},
+        {"text": "Minutes 1-3 plan uses crazy progression (compresses multiple events, not just shows setup)", "passed": false},
+        {"text": "By minute 3 viewer should be emotionally invested in outcome", "passed": true},
+        {"text": "A 3-minute re-engagement moment is planned (spectacle that raises stakes)", "passed": false},
+        {"text": "Plan avoids slow setup/explanation — shows execution immediately", "passed": false}
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 0.533, "stddev": 0.189},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "delta": {
+      "pass_rate": "+0.467",
+      "time_seconds": "0",
+      "tokens": "0"
+    }
+  },
+  "notes": [
+    "The skill produced perfect scores (5/5) across all three evals, demonstrating consistent application of the four-beat output format (Opening Beat, Hook Sequence, Premise Lock, Transition Signal).",
+    "The baseline (without_skill) showed the largest gaps on Eval 1 (0.40) and Eval 3 (0.40) — both of which required forward-looking structure (transition to execution phase and crazy progression) that a generic response misses.",
+    "Eval 2 (critique task) produced the smallest gap (1.0 vs 0.80) because identifying obvious retention mistakes is partially achievable from general YouTube knowledge. The skill added depth and a full rewrite script, but 4/5 assertions were satisfiable without it.",
+    "The most discriminating assertions are those requiring 'crazy progression' (Eval 3 Expectation 2), 'transition to execution' (Eval 1 Expectation 5), and 'visual confirmation' (Eval 1 Expectation 1 — baseline opened OUTSIDE the chamber, not inside it).",
+    "Eval 2's baseline failure was narrow: the baseline noted the ball pit wasn't mentioned until 25-30 seconds but framed it as a verbal timing issue rather than a thumbnail visual confirmation failure.",
+    "Without the skill, the baseline default was to start with a 'Hey guys' warmup and describe the creator standing outside/explaining setup — exactly the pattern the SKILL.md is designed to prevent.",
+    "Output quality delta is substantial: with-skill responses averaged ~4390 chars vs ~1716 chars for baseline — more than 2.5x more detailed with richer visual direction, specific dialogue, and sensory hooks."
+  ]
+}

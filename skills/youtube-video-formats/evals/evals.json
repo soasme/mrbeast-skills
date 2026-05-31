@@ -1,0 +1,44 @@
+{
+  "skill_name": "youtube-video-formats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to make a video about extreme hot sauces, starting with mild ones and ending with the world's hottest. What format should I use and how should I structure it to maximize viewer retention all the way to the end?",
+      "expected_output": "Recommendation of the stair-stepping format with clear explanation of why it fits (progressive escalation, payoff at end, viewer curiosity about the next level). Should include: how to open, how to transition between sauces, what the stakes/payoff at the end look like, and a note on why the world-record sauce must be last.",
+      "files": [],
+      "expectations": [
+        "Recommends the stair-stepping format by name or description",
+        "Explains that each heat level must be higher/more extreme than the last",
+        "States that the most extreme sauce must be revealed at the end (never early)",
+        "Includes ideas for what makes individual sauce segments entertaining beyond just eating",
+        "Notes a strong payoff structure at the finale (world's hottest sauce)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We've done 8 'last to leave' challenge videos in the last year and viewership is declining on them. What should we do about the format? Give me specific advice on both short-term fixes and long-term strategy.",
+      "expected_output": "Advice that: diagnoses format fatigue, recommends separating same-format videos by at least 2-3 other formats, suggests innovating within the format (combine with stair-stepping, add twist), and potentially retiring it temporarily. Should reference the principle that viewers want new experiences even when they say they want more of the same.",
+      "files": [],
+      "expectations": [
+        "Identifies this as format fatigue / format saturation",
+        "Recommends not running same format back-to-back (minimum 2-3 other formats in between)",
+        "Suggests either resting the format temporarily or adding a significant twist",
+        "References the principle that viewers don't actually want the same format forever",
+        "Provides at least one concrete innovation idea for making the format feel fresh"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Design a video format for this concept: 'A famous chef and I swap kitchens for a week — I cook in a Michelin-star restaurant, they cook in my home kitchen.' What format would make viewers watch to the end, what the payoff should be, and how to structure the story.",
+      "expected_output": "A format design that creates an open-loop question (who performs better? who succeeds or fails?), uses the outcome-unknown principle, structures the story as two parallel tracks that converge at the end, and designs a strong payoff (a taste test / judge / reaction moment). Should avoid just listing 'Day 1, Day 2...' structure.",
+      "files": [],
+      "expectations": [
+        "Identifies an open-loop question that drives viewers to the end (who wins? who fails worse?)",
+        "Structures the video as parallel tracks that converge at payoff",
+        "Designs a specific payoff moment (e.g., blind taste test, professional judge, customer reactions)",
+        "Recommends showing early failures from both kitchens to build investment",
+        "Notes that the outcome must not be revealed before the payoff moment"
+      ]
+    }
+  ]
+}

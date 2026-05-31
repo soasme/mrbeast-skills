@@ -1,0 +1,92 @@
+{
+  "expectations": [
+    {
+      "text": "Minute 0-1 plan specifically mentions showing the glass box (matching thumbnail expectation)",
+      "passed": true,
+      "evidence": "Response opens with: 'Open on a wide drone shot of the glass box already constructed with 10 people visible inside it.' and 'The thumbnail visual (glass box + people inside) appears in the first 5 seconds — no viewer feels deceived.'"
+    },
+    {
+      "text": "Minutes 1-3 uses crazy progression (compresses early days/eliminations, not linear Day 1 coverage)",
+      "passed": true,
+      "evidence": "Response explicitly labels 'Crazy progression (compress early days)' and describes: 'Day 1 → First argument... Day 2 → First person considers quitting... Day 3 → First elimination' — 3 days compressed into under 2 minutes, not linear Day 1 coverage."
+    },
+    {
+      "text": "A re-engagement spectacle is planned at approximately the 3-minute mark",
+      "passed": true,
+      "evidence": "Response states: 'At exactly the 3-minute mark: the production crew backs a flatbed truck up to the box and uses a crane to lower a second, smaller 'penalty box'... onto the roof of the glass box.' Labeled as '3-Minute Re-engagement.'"
+    },
+    {
+      "text": "Minutes 3-6 section focuses on story investment and character development",
+      "passed": true,
+      "evidence": "Section 'STORY BUILD (3–6 minutes)' explicitly introduces characters through action: 'The strategist who immediately starts making alliances. The wildcard who brought a guitar... The quiet one in the corner.' Scene 2 covers alliance formation, Scene 3 covers eliminations and character dynamics."
+    },
+    {
+      "text": "A second re-engagement is planned at approximately the 6-minute mark",
+      "passed": true,
+      "evidence": "Response states: 'At minute 6: the host walks up and announces that starting now, the box's AC unit will be turned off. Temperature inside will reach 95°F.' Labeled as '6-Minute Re-engagement.'"
+    },
+    {
+      "text": "Back half plan exists and notes the 'lull' dynamic and avoidance of signaling the end",
+      "passed": true,
+      "evidence": "Back half section explicitly states: 'Viewers who've made it to 6 minutes are now committed. The back half can breathe more...' (lull dynamic). Also states under 'Rules for back half' per SKILL: 'Never signal the ending is coming (unless it's to build hype for the prize/payoff)' — implemented as 'The back half avoids signaling the end until Day 30 is explicitly announced at 13:30.'"
+    },
+    {
+      "text": "The payoff (winner revealed) is at the very end, followed by abrupt ending",
+      "passed": true,
+      "evidence": "Response places winner reveal at 13:30–14:30, and ending segment (14:30–15:00) states: 'Then cut to black immediately after they say \"I won.\" No outro. No \"like and subscribe.\" Hard cut.' Structural notes confirm: 'Ending is abrupt: winner's phone call ends the video. No transition to outro.'"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 1,
+    "output_chars": 5842,
+    "skill_used": true
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The 3-minute re-engagement (crane/penalty box) requires zero explanation",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The crane lowering a visible cage onto the glass box is indeed a self-evident visual spectacle — consistent with the SKILL's requirement for 'Quick, jaw-dropping, no explanation needed'"
+    },
+    {
+      "claim": "The 6-minute re-engagement is story-critical and takes about 45 seconds to set up",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The heat wave announcement directly changes the conditions for the rest of the video and is explicitly labeled as needing '~45 seconds to set up,' consistent with SKILL's 6-min calibration of '30-60 seconds to set up, pushes narrative'"
+    },
+    {
+      "claim": "The minute-mark summary table covers all major segments",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Table contains 10 rows covering 0-1, 1-3, 3, 3-6, 6, 6-11, 11-13, 12:30, 13:30-14:30, and 14:30-15:00"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the re-engagement content ideas are genuinely 'high-spectacle and instantly understandable' vs. complex plot events — a weak re-engagement idea that requires explanation would pass these assertions."
+      },
+      {
+        "assertion": "Back half plan exists and notes the 'lull' dynamic and avoidance of signaling the end",
+        "reason": "This is two separate concerns merged into one assertion. A response could note the lull but fail to address signaling-the-end avoidance, and still pass. Consider splitting."
+      }
+    ],
+    "overall": "Assertions are well-targeted and discriminating. The re-engagement quality assertion gap is the only meaningful miss."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "Opening 15 seconds confirms the massive slide from the thumbnail",
+      "passed": true,
+      "evidence": "Response states: 'Start with an establishing drone shot of the entire 500-foot slide to confirm the scale the thumbnail promised.' And: 'Show a quick test run so viewers see someone actually going down the slide in the first 30 seconds.' The thumbnail confirmation is addressed in the opening, though without the same level of specificity as the with-skill version."
+    },
+    {
+      "text": "Minutes 1-3 plan uses crazy progression (compresses multiple events, not just shows setup)",
+      "passed": false,
+      "evidence": "The plan describes: 'Show the first 3–4 contestants going down the slide. Keep cuts quick — each run gets about 10–15 seconds of screen time.' This is partially compressed but the framing is primarily setup-oriented ('Show a quick test run', 'Establish the rules briefly', 'Briefly introduce 2–3 contestants'). The term 'crazy progression' is not used and the concept of compressing many events to make the viewer feel they've watched 30 minutes is absent. Minute 2:30-3:00 ends with 'someone at the top of the slide looking nervous as the new conditions are explained' — this is setup framing, not execution."
+    },
+    {
+      "text": "By minute 3 viewer should be emotionally invested in outcome",
+      "passed": true,
+      "evidence": "Minute 2 section: 'Briefly introduce 2–3 contestants who seem like they'll be important... These 5-second clips give viewers people to root for.' And final paragraph: 'By minute 3, viewers should understand who the key characters are, have seen real competition and elimination, and be excited about what's coming next.' Emotional investment addressed."
+    },
+    {
+      "text": "A 3-minute re-engagement moment is planned (spectacle that raises stakes)",
+      "passed": false,
+      "evidence": "Minute 2:30-3:00 section mentions: 'Reveal a twist or escalation — maybe the water pressure increases, obstacles are added, or the slide gets slippery.' This is presented as a hypothetical list ('maybe...or...or') rather than a specific planned spectacle. The section ends on 'someone at the top of the slide looking nervous as the new conditions are explained' — described as anticipation, not a re-engagement spectacle with visual impact. The plan lacks a concrete re-engagement moment."
+    },
+    {
+      "text": "Plan avoids slow setup/explanation — shows execution immediately",
+      "passed": false,
+      "evidence": "The opening hook includes: 'Establish the rules briefly' and multiple setup descriptions. Minute 1 starts with 'Get the competition started immediately' which is good intent, but Minute 2:30-3:00 describes 'the new conditions are explained' — ending the section on an explanation rather than execution. Overall the plan is more setup-oriented than execution-oriented, particularly compared to the with-skill version which explicitly executes from the 45-second mark."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.40
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Write": 1
+    },
+    "total_tool_calls": 1,
+    "output_chars": 1714,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Plan is shorter and more generic than with-skill version",
+      "type": "quality",
+      "verified": true,
+      "evidence": "1714 chars vs 4502 chars. No specific dialogue, no timestamped beats, no character archetypes named, no specific visual direction"
+    },
+    {
+      "claim": "Re-engagement moment is vague ('maybe obstacles, maybe faster')",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Uses 'maybe...or...or' framing — no specific spectacle planned"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Eval-3 is the most discriminating of the three — it requires specific structure (crazy progression, re-engagement spectacle) that a generic response won't include. Good eval design."
+  }
+}

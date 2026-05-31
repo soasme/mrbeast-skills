@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends placing both brand deals in the back half (after minute 6)",
+      "passed": false,
+      "evidence": "Option 1 suggests placing the first deal at 'minutes 2–3' — well before minute 6. While Option 2 (both in the back half) is also presented, the response offers Option 1 as a valid equal alternative. A response that recommends a front-loaded option as viable does not pass this expectation."
+    },
+    {
+      "text": "Does not recommend placing any brand deal in the first 5 minutes",
+      "passed": false,
+      "evidence": "Option 1 explicitly recommends 'First brand deal around minutes 2–3' — directly within the first 5 minutes and presented as a legitimate option."
+    },
+    {
+      "text": "Suggests integration strategies tied to the obstacle course competition context",
+      "passed": true,
+      "evidence": "Response suggests energy drinks/sports nutrition shown during the competition, athletic apparel as prizes, mobile games as side-challenges, and tech/wearables to track performance — all contextually tied to the obstacle course format."
+    },
+    {
+      "text": "Lists specific common mistakes to avoid",
+      "passed": true,
+      "evidence": "Response has a 'Common Mistakes to Avoid' section listing 5 items including back-to-back ads, unrelated sponsors, scripted reads, excessive length, and pre-competition placement."
+    },
+    {
+      "text": "Notes that 2 brand deals in a 12-minute video is manageable if placed correctly",
+      "passed": false,
+      "evidence": "The response does not explicitly address whether 2 deals in 12 minutes is manageable. It jumps straight into placement options without framing the feasibility question."
+    },
+    {
+      "text": "Advises separating the two brand deals (not back-to-back)",
+      "passed": true,
+      "evidence": "Mistake #1 in the Common Mistakes section states: 'Doing both ads back-to-back — that creates a long dead zone in the middle of the video.'"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 1886,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Option 2 (both in back half) is probably safer",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The response itself acknowledges Option 2 is safer, but then gives equal weight to Option 1 which violates the placement principle."
+    },
+    {
+      "claim": "Each segment should be 30–60 seconds max",
+      "type": "factual",
+      "verified": true,
+      "evidence": "This matches the skill's guidance and is correctly stated in the General Tips section."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No additional suggestions. The placement expectations correctly identified the baseline's core failure — presenting a front-loaded option as valid."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "skill_name": "youtube-thumbnail-title-ctr",
+    "timestamp": "2026-06-01T00:00:00Z",
+    "evals_run": [1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "Generate 5 YouTube title variations for dollar store giveaway video",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 2,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Produces exactly 5 title variations", "passed": true},
+        {"text": "At least one title uses a survival/extreme verb (Survived, Bought Everything, Emptied)", "passed": true},
+        {"text": "At least one title uses a dollar amount or scale indicator", "passed": true},
+        {"text": "Titles are ranked 1-5 by predicted CTR with reasoning for the ranking", "passed": true},
+        {"text": "The top-ranked title is more extreme/intriguing than the weakest one", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Compare CTR of homemade pasta vs world's longest pasta and suggest thumbnails",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 2,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Correctly identifies B as higher CTR with clear reasoning", "passed": true},
+        {"text": "Explains the role of 'World's Longest' as a scale/superlative trigger", "passed": true},
+        {"text": "Thumbnail concept for B emphasizes scale (person dwarfed by pasta, measurement visible)", "passed": true},
+        {"text": "Notes that thumbnail A has no obvious visual hook", "passed": true},
+        {"text": "References the principle that extremity outperforms neutral framing", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Diagnose CTR problem for homeless people video and rewrite title and thumbnail",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 2,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Correctly diagnoses the title as generic/low-extremity", "passed": true},
+        {"text": "Identifies the thumbnail as showing a generic conversation scene with no hook", "passed": true},
+        {"text": "Rewritten title adds scale, number, or outcome (e.g., 'I Gave 100 Homeless People...', '$1,000,000 to Homeless Families')", "passed": true},
+        {"text": "Rewritten thumbnail concept shows transformation, scale, or emotional peak moment", "passed": true},
+        {"text": "Explicitly notes that the rewrite must not misrepresent the content (expectations must be met)", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "Generate 5 YouTube title variations for dollar store giveaway video",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Produces exactly 5 title variations", "passed": true},
+        {"text": "At least one title uses a survival/extreme verb (Survived, Bought Everything, Emptied)", "passed": true},
+        {"text": "At least one title uses a dollar amount or scale indicator", "passed": true},
+        {"text": "Titles are ranked 1-5 by predicted CTR with reasoning for the ranking", "passed": true},
+        {"text": "The top-ranked title is more extreme/intriguing than the weakest one", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Compare CTR of homemade pasta vs world's longest pasta and suggest thumbnails",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Correctly identifies B as higher CTR with clear reasoning", "passed": true},
+        {"text": "Explains the role of 'World's Longest' as a scale/superlative trigger", "passed": true},
+        {"text": "Thumbnail concept for B emphasizes scale (person dwarfed by pasta, measurement visible)", "passed": true},
+        {"text": "Notes that thumbnail A has no obvious visual hook", "passed": true},
+        {"text": "References the principle that extremity outperforms neutral framing", "passed": true}
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Diagnose CTR problem for homeless people video and rewrite title and thumbnail",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "Correctly diagnoses the title as generic/low-extremity", "passed": true},
+        {"text": "Identifies the thumbnail as showing a generic conversation scene with no hook", "passed": true},
+        {"text": "Rewritten title adds scale, number, or outcome (e.g., 'I Gave 100 Homeless People...', '$1,000,000 to Homeless Families')", "passed": true},
+        {"text": "Rewritten thumbnail concept shows transformation, scale, or emotional peak moment", "passed": true},
+        {"text": "Explicitly notes that the rewrite must not misrepresent the content (expectations must be met)", "passed": true}
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0},
+      "time_seconds": {"mean": 0, "stddev": 0},
+      "tokens": {"mean": 0, "stddev": 0}
+    },
+    "delta": {
+      "pass_rate": "+0.0",
+      "time_seconds": "0",
+      "tokens": "0"
+    }
+  },
+  "notes": [
+    "Both with_skill and without_skill configurations achieved a perfect 1.0 pass rate across all 3 evals (15/15 expectations passed each).",
+    "The skill produced measurably richer, more structured responses: with_skill responses included explicit skill-framework terminology (extremity rule, open loop, thumbnail contract, production implications), while without_skill responses covered the same high-level points but with less systematic structure.",
+    "The current eval expectations appear insufficient to discriminate between skill-guided and baseline performance. All 5 core CTR concepts tested (extremity, scale, visual hook, superlative triggers, accuracy caveat) are within reach of a capable baseline model without skill guidance.",
+    "Qualitative differences observed: with_skill responses (1) explicitly applied named frameworks from the skill (e.g., 'survival format', 'open loop principle', 'thumbnail/title contract'), (2) included production implications, (3) provided more granular CTR reasoning tied to the skill's checklist. These differences are not captured by the current expectations.",
+    "Recommendation: Add expectations that check for skill-specific constructs (e.g., 'Response cites production implications', 'Response uses the open loop principle by name', 'Response provides a CTR self-test checklist') to make the evals more discriminating."
+  ]
+}

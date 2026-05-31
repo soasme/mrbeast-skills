@@ -1,0 +1,88 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies the facility as the primary critical component (no facility = no video)",
+      "passed": true,
+      "evidence": "Response states: 'Without the pool, you have nowhere to film. No facility = no video, full stop. This is the single most important logistics lock you need.'"
+    },
+    {
+      "text": "Identifies the custom floating obstacles as a critical component",
+      "passed": true,
+      "evidence": "Response explicitly lists 'Custom Floating Obstacles' as Critical Component 2, noting 'they're what makes this video World's Largest — without them, you have a swimming video, not a challenge video.'"
+    },
+    {
+      "text": "Identifies 20 contestants as a critical component (video likely needs minimum count)",
+      "passed": true,
+      "evidence": "Response explicitly lists '20 Contestants' as Critical Component 3: 'The video title and premise promise 20 contestants. If only 10 show up, you either have no video or a fundamentally different video than you planned.'"
+    },
+    {
+      "text": "For each component, recommends daily check-ins or equivalent tracking",
+      "passed": true,
+      "evidence": "For facility: 'Daily check-in — assign one person who owns this relationship. They check in with the facility contact daily in the final two weeks.' For obstacles: 'Daily check-ins with the contractor.' For contestants: 'Direct outreach per day in the final week.'"
+    },
+    {
+      "text": "Recommends asking for video updates (not just photos) from contractors building obstacles",
+      "passed": true,
+      "evidence": "Response explicitly states: 'Ask for video updates of work in progress. Not text updates. Video. Color correct? Scale correct? Structural integrity looks right? These things can only be verified visually.'"
+    },
+    {
+      "text": "Recommends negotiating a backup day with the facility",
+      "passed": true,
+      "evidence": "Response states: 'Negotiate a backup day — when you secure the facility, build a one-day extension option into the contract. A pool that gives you a backup day beats a marginally better pool that won't.'"
+    },
+    {
+      "text": "Notes that standard shipping should not be trusted for critical props",
+      "passed": true,
+      "evidence": "Response states: 'Never trust standard shipping — if the obstacles need to be transported, pay for hand-delivery or confirm the contractor is transporting them directly. Standard shipping is never acceptable for a critical prop.'"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 1,
+    "total_steps": 2,
+    "errors_encountered": 0,
+    "output_chars": 4821,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Floating obstacles are 'almost certainly the thumbnail visual'",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Reasonable inference for a MrBeast-style video where the title visual drives the thumbnail; appropriately framed as likely rather than certain."
+    },
+    {
+      "claim": "Over-recruit 30 contestants for 20 slots",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Standard production practice confirmed in the response with a specific number (30 for 20 slots) and rationale (5-6 no-shows expected)."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks that the response explains the 'coin-flip rule' or the concept that a 50/50 critical component equals a 50/50 video — which is a distinctive skill concept. The response mentions it but no expectation validates it."
+      },
+      {
+        "assertion": "For each component, recommends daily check-ins or equivalent tracking",
+        "reason": "The phrase 'or equivalent tracking' weakens this assertion — a weekly check-in schedule might technically pass. Tightening to 'daily check-ins' would make it more discriminating."
+      }
+    ],
+    "overall": "Strong eval with good coverage of the skill's key concepts. Minor tightening of the check-in frequency assertion would improve discriminatory power."
+  }
+}

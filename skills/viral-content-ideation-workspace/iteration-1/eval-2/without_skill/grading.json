@@ -1,0 +1,76 @@
+{
+  "expectations": [
+    {
+      "text": "Reframes the concept to be more creative rather than just more expensive",
+      "passed": false,
+      "evidence": "The baseline response primarily offers budget allocation advice (how to spend $5,000) rather than reframing the premise. Suggestions like 'find interesting kids', 'create a mini hackathon', 'add a guest/mentor' do not fundamentally change the concept — they are still a coding educational video with better logistics. The premise remains 'teach kids to code' rather than being transformed into something structurally different."
+    },
+    {
+      "text": "Provides at least one specific budget-saving creative alternative",
+      "passed": true,
+      "evidence": "The response suggests finding a developer willing to volunteer their time and using free locations like library or school computer lab. These are specific budget-saving alternatives, even if not especially creative ones."
+    },
+    {
+      "text": "The redesigned concept is MORE interesting than the original expensive version",
+      "passed": false,
+      "evidence": "The baseline's 'redesigned concept' (mini hackathon) is essentially the same premise with lower production value. The response itself acknowledges 'the video doesn't need expensive equipment to be good' but doesn't argue why the new concept is more interesting — only that it's cheaper. A mini hackathon at a library is less visually compelling than a $50k production."
+    },
+    {
+      "text": "Explicitly applies the 'creativity saves money' principle",
+      "passed": false,
+      "evidence": "The baseline applies general cost-cutting advice but never names or explicitly frames the 'creativity saves money' principle. The response focuses on finding free/cheap alternatives to budget line items, not on using creativity to create a fundamentally better concept at lower cost."
+    },
+    {
+      "text": "New concept stays under or at $5,000",
+      "passed": true,
+      "evidence": "Budget breakdown totals ~$3,000–$3,500 which is within the $5,000 constraint."
+    },
+    {
+      "text": "Draft title for the redesigned concept uses extreme/hook language",
+      "passed": false,
+      "evidence": "Suggested title: 'I Challenged 5 Kids to Build An App in 24 Hours' — this is a reasonable title but lacks the extreme/hook language of viral YouTube. No specific dollar amounts, no vs. structure, no superlatives, no urgency cues. It would not generate high CTR compared to skill-guided titles."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 4,
+    "total": 6,
+    "pass_rate": 0.333
+  },
+  "execution_metrics": {
+    "output_chars": 1589,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The advice makes the video more interesting",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The advice makes the video cheaper but does not argue convincingly that the result is more compelling or watchable"
+    },
+    {
+      "claim": "Budget stays under $5,000",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Total cited as $3,000–$3,500"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The expectation 'redesigned concept is MORE interesting than the original expensive version' is somewhat subjective. Consider adding a criterion like 'the redesigned concept changes the structural format (e.g., adds competition, stakes, or a novel angle)' which is more objectively verifiable."
+      }
+    ],
+    "overall": "The evals effectively distinguish between budget-cutting advice and genuine creative reframing. The baseline passes only 2/6, demonstrating the skill adds real value."
+  }
+}

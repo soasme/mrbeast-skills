@@ -1,0 +1,49 @@
+{
+  "skill_name": "youtube-production-mindset",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm producing a video called 'World's Largest Swimming Pool Challenge' — we need to rent a massive Olympic-size facility, build custom floating obstacles, and secure 20 contestants. Identify all the critical components for this production and explain how each one should be tracked and protected.",
+      "expected_output": "A list of critical components (the facility, the floating obstacles, the 20 contestants showing up) with specific tracking plans for each: daily check-ins, video updates from contractors, backup options, early deadlines before the shoot. Should explain why each is critical and what happens to the video if any one fails.",
+      "files": [],
+      "expectations": [
+        "Identifies the facility as the primary critical component (no facility = no video)",
+        "Identifies the custom floating obstacles as a critical component",
+        "Identifies 20 contestants as a critical component (video likely needs minimum count)",
+        "For each component, recommends daily check-ins or equivalent tracking",
+        "Recommends asking for video updates (not just photos) from contractors building obstacles",
+        "Recommends negotiating a backup day with the facility",
+        "Notes that standard shipping should not be trusted for critical props"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I asked our set designer to build a giant prop castle for a video shooting in 3 weeks. I told them the deadline and haven't heard from them in 5 days. Is this okay? What should I be doing instead?",
+      "expected_output": "Clear answer: No, this is not okay — it's dump-and-forget. The response should prescribe daily check-ins, video update requests, asking for early completion milestone (1 week before shoot), building a backup option in parallel, and explaining why silence from a contractor is a risk, not a reassurance.",
+      "files": [],
+      "expectations": [
+        "Clearly states that no contact for 5 days is not acceptable",
+        "Uses or references the 'dump-and-forget' failure pattern",
+        "Recommends establishing daily check-ins starting immediately",
+        "Recommends requesting video updates of progress (not just status messages)",
+        "Recommends setting an internal deadline earlier than the actual shoot date",
+        "Recommends starting a backup option in parallel",
+        "Notes that if the castle is critical to the video, the producer is responsible — not the contractor — if it fails"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "On shoot day, the special effects team can't get the pyrotechnics to work for the finale scene. The video shoot ends in 4 hours. What should the production team do?",
+      "expected_output": "A crisis response that: escalates to leadership immediately (not in 4 hours), explores all alternatives in parallel (contact other FX vendors, ask if there's a simpler practical solution, check if the scene can be filmed differently), and asks whether the failure can itself be turned into content. Should reference the principle of 'pushing through no' and creativity as the problem-solver.",
+      "files": [],
+      "expectations": [
+        "Recommends immediate escalation (not waiting) to leadership/director",
+        "Recommends exploring creative alternatives to pyrotechnics in parallel",
+        "Mentions the principle of 'can this failure become content?'",
+        "Recommends contacting other FX vendors or specialists immediately (no does not mean no)",
+        "Does not recommend just 'skipping the scene' without exploring all options first",
+        "References the importance of having a backup plan (and asks why there wasn't one)"
+      ]
+    }
+  ]
+}

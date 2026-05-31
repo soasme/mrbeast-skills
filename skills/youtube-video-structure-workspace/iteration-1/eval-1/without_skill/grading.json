@@ -1,0 +1,78 @@
+{
+  "expectations": [
+    {
+      "text": "Minute 0-1 plan specifically mentions showing the glass box (matching thumbnail expectation)",
+      "passed": false,
+      "evidence": "Minute 0-2 section says 'Open with a wide establishing shot of the glass box challenge set' but the section spans 2 minutes (not the critical first 60 seconds), and does not specifically address matching the thumbnail expectation. The focus is on rule explanation and contestant bios, not on immediately confirming the thumbnail visual."
+    },
+    {
+      "text": "Minutes 1-3 uses crazy progression (compresses early days/eliminations, not linear Day 1 coverage)",
+      "passed": false,
+      "evidence": "Minutes 2-4 in the response covers 'Day 1 Setup' — contestants settling in, figuring out sleeping arrangements, conversations. This is linear Day 1 coverage, not compressed crazy progression. No days are compressed; the structure proceeds chronologically and slowly."
+    },
+    {
+      "text": "A re-engagement spectacle is planned at approximately the 3-minute mark",
+      "passed": false,
+      "evidence": "No re-engagement moment is planned anywhere in the outline, let alone at the 3-minute mark. The 3-minute window contains 'Day 1 Setup' content (settling in, introductions)."
+    },
+    {
+      "text": "Minutes 3-6 section focuses on story investment and character development",
+      "passed": false,
+      "evidence": "Minutes 4-7 is labeled 'Early Days (Days 1–7)' and covers 'montage form' of the first week. While it mentions conflicts and alliances, it does not specifically focus on character development — it's framed as a broad overview rather than deliberate story investment building."
+    },
+    {
+      "text": "A second re-engagement is planned at approximately the 6-minute mark",
+      "passed": false,
+      "evidence": "No re-engagement at 6 minutes. The minute 7-10 section covers generic 'mid-game drama' with no specific spectacle or story-critical pivot planned."
+    },
+    {
+      "text": "Back half plan exists and notes the 'lull' dynamic and avoidance of signaling the end",
+      "passed": false,
+      "evidence": "The back half (minutes 10-15) does exist but makes no mention of the 'lull' dynamic. The final segment (14-15 min) explicitly signals the end with: 'Host closes out the video with a call to action: \"Subscribe for more challenges like this!\"' — directly contradicting the avoidance requirement."
+    },
+    {
+      "text": "The payoff (winner revealed) is at the very end, followed by abrupt ending",
+      "passed": false,
+      "evidence": "Winner is announced at minute 12-14, but is followed by 'Quick clips of all the contestants reflecting on the experience. Host closes out the video with a call to action: \"Subscribe for more challenges like this!\"' — this is an extended outro after the payoff, not an abrupt ending."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 7,
+    "total": 7,
+    "pass_rate": 0.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "output_chars": 1872,
+    "skill_used": false
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "The structure covers the full arc from setup to payoff",
+      "type": "quality",
+      "verified": true,
+      "evidence": "The outline does cover setup through winner reveal, but the structural quality (retention optimization, re-engagements, compression) is absent"
+    },
+    {
+      "claim": "The mid-game section (minutes 7-10) provides the main drama",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The mid-game section describes generic 'alliances, betrayals, power plays' without specific content decisions that would actually deliver drama in retention terms"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions — the assertions clearly discriminate between the skill-guided and baseline responses. The 0/7 pass rate accurately reflects the baseline response's lack of skill-specific framework application."
+  }
+}

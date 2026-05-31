@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies an open-loop question that drives viewers to the end (who wins? who fails worse?)",
+      "passed": true,
+      "evidence": "Response states 'the format needs to answer: who performs better out of their element?' and frames the hook as 'Whoever gets better scores wins.' The open-loop competitive question is present."
+    },
+    {
+      "text": "Structures the video as parallel tracks that converge at payoff",
+      "passed": true,
+      "evidence": "Response uses a day-based structure (Days 1, 2-4, 5-6) but includes 'cross-cutting between the two kitchens in this section to build the competitive energy.' The parallel track concept is implicit but present, though less explicitly structured than the with-skill version."
+    },
+    {
+      "text": "Designs a specific payoff moment (e.g., blind taste test, professional judge, customer reactions)",
+      "passed": true,
+      "evidence": "Response specifies 'The Payoff: Blind Taste Test' with 'credible external judges — food critics, restaurant regulars, or members of the public who are serious food lovers. They taste without knowing who made what.'"
+    },
+    {
+      "text": "Recommends showing early failures from both kitchens to build investment",
+      "passed": true,
+      "evidence": "Response states 'both of you should visibly fail at something. A ruined dish, a technique that doesn't translate, an ingredient you can't find. Failure builds investment.' Both kitchens failing is explicitly covered."
+    },
+    {
+      "text": "Notes that the outcome must not be revealed before the payoff moment",
+      "passed": true,
+      "evidence": "Response states under 'Key Principles': 'Protect the ending: Do not hint at who wins earlier in the video. Avoid reaction shots from the end in your hook. The blind taste test only works as a payoff if the outcome is genuinely unknown to the viewer.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2842,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Day-based structure with cross-cutting captures parallel tracks",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The response uses a day-by-day organizing structure (Days 1, 2-4, 5-6) which the expected output explicitly warns against. While cross-cutting is mentioned, the organizing principle is chronological rather than competitive-parallel. The skill guidance and with-skill response both explicitly say to avoid this structure."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The without-skill response uses a Day 1/Day 2-4/Day 5-6 structure that the expected output explicitly says to avoid — yet all expectations pass. An assertion like 'Warns against organizing the video as a day-by-day vlog' would discriminate between the skill-guided and baseline responses for this eval. Currently, Eval 3 has a ceiling effect where the baseline achieves the same pass rate as the with-skill run despite having a structural flaw the skill would correct."
+      }
+    ],
+    "overall": "All 5 expectations pass for the baseline, but the baseline still falls into the day-by-day vlog trap that the skill explicitly warns against. The evals miss this distinction — an additional assertion about vlog structure avoidance would create meaningful separation between the two runs."
+  }
+}

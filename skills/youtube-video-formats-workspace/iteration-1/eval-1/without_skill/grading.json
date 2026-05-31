@@ -1,0 +1,70 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends the stair-stepping format by name or description",
+      "passed": false,
+      "evidence": "Response recommends 'Progressive Escalation' as a description but never uses the term 'stair-stepping' or 'stair-step format' by name. The skill's named format is not invoked. The description is functionally similar but lacks the specific terminology and the full structural mechanics the skill provides."
+    },
+    {
+      "text": "Explains that each heat level must be higher/more extreme than the last",
+      "passed": true,
+      "evidence": "Response states 'each sauce is more extreme than the last' and the teasing mechanic: 'That was 50,000 Scoville. The next one is 10x hotter.' The escalation principle is present."
+    },
+    {
+      "text": "States that the most extreme sauce must be revealed at the end (never early)",
+      "passed": true,
+      "evidence": "Response states 'The world's hottest sauce is your climax. Everything before it is buildup' and 'Don't reveal the effects of the final sauce before you eat it.' The never-early principle is covered."
+    },
+    {
+      "text": "Includes ideas for what makes individual sauce segments entertaining beyond just eating",
+      "passed": true,
+      "evidence": "Response includes: 'A guest who tries each sauce with you', 'A timer challenge: can you eat the sauce and still read a sentence out loud?', 'Water/milk is forbidden', and 'A tap out mechanic.' Multiple entertainment layers beyond eating are provided."
+    },
+    {
+      "text": "Notes a strong payoff structure at the finale (world's hottest sauce)",
+      "passed": true,
+      "evidence": "Response has 'The Finale' section with: have a medic present, don't reveal effects beforehand, film the aftermath, 'end the video here — don't add a long outro or sponsor read after this beat.' Payoff structure is addressed."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "execution_metrics": {
+    "tool_calls": 0,
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 2187,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Progressive escalation is the natural structure for this concept",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Consistent with the skill's stair-stepping format guidance, though not named as such."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Recommends the stair-stepping format by name or description",
+        "reason": "This assertion currently fails because 'by name' requires the specific term, but 'or description' is vague enough that a generic escalation framing could arguably pass it. The assertion would be more discriminating if it required both the named format AND its specific payoff mechanics (never reveal the final beat early, viewer logic of each step raising curiosity)."
+      }
+    ],
+    "overall": "The baseline response is reasonably good at the general structure but lacks the named format framework, the explicit rotation rule, and the skill's specific payoff checklist. The single failing expectation correctly distinguishes the two runs."
+  }
+}

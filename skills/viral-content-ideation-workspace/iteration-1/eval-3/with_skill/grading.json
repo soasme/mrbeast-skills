@@ -1,0 +1,72 @@
+{
+  "expectations": [
+    {
+      "text": "Scores both ideas on all 5 dimensions (CTR, simplicity, wow factor, emotional investment, format fit)",
+      "passed": true,
+      "evidence": "Both Idea A and Idea B are scored on all 5 dimensions in table format with individual scores and reasoning. Idea A: CTR=2, Simplicity=3, Wow=2, Emotional=5, Format=4. Idea B: CTR=5, Simplicity=5, Wow=4, Emotional=2, Format=3. All 10 dimension scores present."
+    },
+    {
+      "text": "Scores are differentiated between the two ideas — not identical",
+      "passed": true,
+      "evidence": "Scores differ significantly: CTR (2 vs 5), Simplicity (3 vs 5), Wow factor (2 vs 4), Emotional investment (5 vs 2), Format fit (4 vs 3). Only format fit is close. Total scores are 16 vs 19, clearly differentiated."
+    },
+    {
+      "text": "Clear recommendation for which idea to produce with reasoning",
+      "passed": true,
+      "evidence": "Explicitly states 'Recommendation: Produce Idea B (with one modification)' with rationale: 'CTR, simplicity, and wow factor scores are dramatically higher — and those dimensions determine whether the video gets seen at all.' The reasoning is specific and grounded in the rubric scores."
+    },
+    {
+      "text": "Notes that Idea A has emotional investment but weak thumbnail/CTR potential",
+      "passed": true,
+      "evidence": "Idea A's emotional investment scored 5/5 with note 'A year of training, a clear underdog, a specific rival... viewers genuinely want to know the outcome.' CTR scored 2/5 with explicit note 'The thumbnail problem: how do you show 1 year of training in one image?' and 'Idea A's fatal flaw is the thumbnail problem.'"
+    },
+    {
+      "text": "Notes that Idea B has strong CTR and wow factor but needs a stronger format/payoff",
+      "passed": true,
+      "evidence": "Idea B CTR=5 and wow factor=4. Format fit=3 with explicit note 'The video risks ending too early: you build it, you get in, balloons pop. There's no built-in reason to watch until minute 15. Needs a challenge or competition layer to extend engagement.'"
+    },
+    {
+      "text": "Suggests improvements for the weaker idea",
+      "passed": true,
+      "evidence": "Section 'How to Improve the Weaker Idea (Idea A)' provides 3 specific improvements: (1) Add specific stakes moment with financial consequences; (2) Reframe thumbnail to face-off format; (3) Sharpen title to 'I Trained 1 Year to Beat An Olympic Coach'. Each improvement is specific and actionable."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 4012,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "Scores reference the SKILL.md rubric thresholds (20+ for strong concept)",
+      "type": "process",
+      "verified": true,
+      "evidence": "Response explicitly references the 20+ threshold: 'A score of 20+ suggests a strong concept. Below 15, rework before building.' and applies it: Idea A at 16 is 'below the 20+ threshold for strong concepts'"
+    },
+    {
+      "claim": "Idea B upgrade suggestion pushes it above 20",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response states 'Score jumps to approximately 23/25' after adding the challenge layer to Idea B"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions. The evals are well-targeted. The skill response demonstrates sophisticated application of the rubric with precise thresholds and specific improvement suggestions."
+  }
+}

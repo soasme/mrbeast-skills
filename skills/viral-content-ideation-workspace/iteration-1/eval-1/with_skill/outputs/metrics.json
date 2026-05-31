@@ -1,0 +1,9 @@
+{
+  "output_chars": 3847,
+  "concepts_produced": 5,
+  "angles_used": ["scale", "competition", "constraint", "scale+competition", "experiment/scale"],
+  "framework_applied": "3-angle expansion",
+  "simplicity_test_applied": true,
+  "wow_factor_included": true,
+  "ctr_scores_differentiated": true
+}

@@ -1,0 +1,76 @@
+{
+  "expectations": [
+    {
+      "text": "Identifies the slow warmup opening as a retention killer",
+      "passed": true,
+      "evidence": "Problem 1 is explicitly titled 'Slow Warmup Opening — Kills the First 5 Seconds' with the analysis: 'There is zero confirmation of the thumbnail promise. Subconscious viewer reaction: "Is this the right video?" — and they\'re gone.' References the principle: 'The first 15 seconds must visually confirm what the thumbnail promised.' Clear, specific identification."
+    },
+    {
+      "text": "Flags the subscribe/bell ask in the first 30 seconds as a mistake",
+      "passed": true,
+      "evidence": "Problem 2 is explicitly 'Subscribe/Bell Ask in the First 30 Seconds' with analysis: 'This appears before the viewer has received any value from the video. The implicit message to the viewer is: "My metrics matter more than your experience right now."' The principle is stated: 'Anything that interrupts that to serve the channel\'s metrics triggers drop-off.'"
+    },
+    {
+      "text": "Flags the sponsor read appearing before the premise is even established",
+      "passed": true,
+      "evidence": "Problem 3 is explicitly 'Sponsor Read Before the Premise Is Established' with analysis: 'The viewer has not yet confirmed this is the video they want to watch — they haven\'t seen the ball pit, they haven\'t heard the stakes, they have no investment in continuing. Placing a sponsor read here is asking someone to sit through an ad before they\'ve agreed to watch the movie.'"
+    },
+    {
+      "text": "Notes that the ball pit concept isn't visually shown until well into the script",
+      "passed": true,
+      "evidence": "Problem 4 explicitly addresses this: 'By the time the ball pit is even named verbally, we are already ~25–30 seconds into the video — and it has not been shown at all. The viewer clicked on a thumbnail showing a massive ball pit. They have been watching someone say hello, ask for a subscribe, and pitch VPN software.' Explicitly notes the visual absence."
+    },
+    {
+      "text": "Provides specific recommendations for how to rewrite the opening",
+      "passed": true,
+      "evidence": "A full rewrite is provided: '0–5 sec: Open ON the ball pit. Wide shot of an enormous sea of multicolored balls... 5–15 sec: Creator is already in the ball pit... 15–45 sec: Show scale. Quick cuts... 45–60 sec: One extreme visual — the creator dives fully under the surface...' Includes exact dialogue and visual direction."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Read": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "output_chars": 4821,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 0
+  },
+  "claims": [
+    {
+      "claim": "All 5 problems identified map directly to SKILL.md common mistakes table",
+      "type": "process",
+      "verified": true,
+      "evidence": "Slow warmup, subscribe ask, sponsor placement, no visual confirmation, meandering premise — all appear in SKILL.md's Common Mistakes table"
+    },
+    {
+      "claim": "Summary table provided with timing and retention impact",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Response ends with a summary table: Mistake | Time It Occurs | Retention Impact — adds structure not requested but useful"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "No assertion checks whether the rewrite itself avoids the same mistakes it identified — a rewrite that still has filler warmup would pass 4/5 assertions. Consider: 'The rewrite does not contain filler warmup, subscribe ask, or sponsor in first 60 seconds.'"
+      }
+    ],
+    "overall": "Strong eval. The 5 assertions map well to the 5 distinct problems in the input script. Minor gap: no assertion validates the quality of the rewrite itself."
+  }
+}
