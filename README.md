@@ -17,7 +17,13 @@ A collection of Claude Code skills distilled from MrBeast's content creation met
 
 ## Usage
 
-These skills are designed for use with [Claude Code](https://claude.ai/code). Install them by copying the skill directories into your `.claude/skills/` folder, or reference them from this repo.
+These skills are designed for use with [Claude Code](https://claude.ai/code).
+
+**Install:**
+
+```bash
+npx skills add soasme/mrbeast-skills
+```
 
 Invoke any skill via the Claude Code `Skill` tool or by typing `/<skill-name>` in the prompt.
 
